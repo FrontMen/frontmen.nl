@@ -1,0 +1,15 @@
+{
+  "name": "frontmen",
+  "version": "1.0.0",
+  "description": "Frontmen Website",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "sh ./css/watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.10.0",
+    "sass-mq": "^5.0.0"
+  }
+}
