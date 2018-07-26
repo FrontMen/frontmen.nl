@@ -5,8 +5,8 @@
 // Project-level settings and setup.
 
 // Base typographical styles and baseline grid.
-$global-font-size: 14px !default;
-$global-line-height: 20px !default;
+$global-font-size: 16px !default;
+$global-line-height: 22px !default;
 
 // Standardise some UI treatments.
 $global-radius: 3px !default;
@@ -25,7 +25,7 @@ $global-spacing-unit-small: round($global-spacing-unit / 2);
 $global-spacing-unit-large: round($global-spacing-unit * 2);
 $global-spacing-unit-huge: round($global-spacing-unit * 4);
 
-// Sanity check
+// Sanity check, make sure spacing and line height match
 @if ($global-spacing-unit != $global-line-height) {
   @error "The value of `$global-spacing-unit` must not be changed.";
 }

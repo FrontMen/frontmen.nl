@@ -7,11 +7,100 @@
 
 // Colour palette.
 
-$color-brand-primary: #ef642b;
-$color-brand-secondairy: #57c9ca;
-$base-color: #1f1e32;
-$grey: #797884;
-$light-grey: #a5a5ad;
-$lightest-grey: #e6e6e6;
-$white: #fff;
-$text-color: $base-color;
+$color-brand-primary: #ef642b !default;
+$color-brand-primary-highlight: lighten($color-brand-primary, 5%) !default;
+$color-brand-primary-shadow: darken($color-brand-primary, 5%) !default;
+
+$color-brand-secondary: #57c9ca !default;
+$color-brand-secondary-highlight: lighten($color-brand-secondary, 5%) !default;
+$color-brand-secondary-shadow: darken($color-brand-secondary, 5%) !default;
+
+$color-blue-dark: #1f1e32 !default;
+$color-grey: #a5a5ad !default;
+$color-grey-dark: #797884 !default;
+$color-grey-light: #e6e6e6 !default;
+$color-white: #fff !default;
+
+// Reassign literal variables to meaningful ones.
+$color-page-text: $color-blue-dark;
+$color-page-background: $color-white;
+
+$color-links: inherit;
+$color-links-prose: $color-brand-primary;
+$color-links-prose-hover: $color-brand-primary-shadow;
+
+$color-page-head-background: $color-blue-dark;
+$color-page-head: $color-grey;
+
+$color-menu-icon: $color-brand-secondary;
+
+// $color-brand-primary:               #378bb5 !default;
+// $color-brand-primary-highlight:     lighten($color-brand-primary, 5%) !default;
+// $color-brand-primary-shadow:        darken($color-brand-primary,  5%) !default;
+
+// $color-brand-secondary:             #abc123 !default;
+// $color-brand-secondary-highlight:   lighten($color-brand-secondary, 5%) !default;
+// $color-brand-secondary-shadow:      darken($color-brand-secondary,  5%) !default;
+
+// $color-ui:                          #e4e4e4 !default;
+
+// $color-grey:                        #666 !default;
+// $color-grey-dark:                   #333 !default;
+// $color-grey-light:                  #999 !default;
+// $color-white:                       #fff !default;
+
+// // Theme colors.
+// $color-theme-red:                   #c00;
+
+// // Reassign literal variables to meaningful ones.
+// $color-page-text:                       $color-grey-dark;
+// $color-page-background:                 #f3f3f3;
+
+// $color-logo:                            $color-brand-primary;
+
+// $color-links:                           inherit;
+// $color-links-prose:                     $color-brand-primary;
+// $color-links-prose-hover:               $color-brand-primary-shadow;
+
+// $color-page-head:                       #fff;
+// $color-page-head-background:            $color-brand-primary;
+
+// $color-masthead-background:             $color-brand-primary;
+
+// $color-btn:                             #fff;
+// $color-btn-background:                  $color-brand-primary;
+// $color-btn-background-hover:            $color-brand-primary-shadow;
+// $color-btn-secondary:                   #fff;
+// $color-btn-secondary-background:        $color-brand-secondary;
+// $color-btn-secondary-background-hover:  $color-brand-secondary-shadow;
+
+// $color-calendar:                        #fff;
+// $color-calendar-title:                  #fff;
+// $color-calendar-title-background:       $color-brand-primary;
+// $color-calendar-busy:                   #fff;
+// $color-calendar-busy-background:        $color-brand-secondary;
+// $color-calendar-outside:                $color-grey-light;
+
+// $color-page-foot:                       #fff;
+// $color-page-foot-background:            $color-grey-dark;;
+
+// $color-panel-background:                #fff;
+// $color-panel-inverse:                   #fff;
+// $color-panel-inverse-background:        $color-brand-primary;
+// $color-panel-link:                      $color-grey-dark;
+// $color-panel-link-hover:                $color-brand-primary;
+
+// $color-testimonial-background:          #fff;
+// $color-testimonial-border:              $color-brand-primary;
+// $color-testimonial-source:              $color-grey;
+
+// $color-headline:                        $color-grey-light;
+
+// $color-sub-content-bg:                  rgba(0, 0, 0, 0.05);
+// $color-sub-content:                     $color-grey;
+
+// $color-pagination:                      $color-white;
+// $color-pagination-border:               $color-pagination;
+// $color-pagination-bg:                   $color-brand-primary;
+// $color-pagination-bg-hover:             $color-brand-primary-shadow;
+// $color-pagination-bg-current:           $color-brand-primary-highlight;
