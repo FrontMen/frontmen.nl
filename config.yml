@@ -1,0 +1,8 @@
+# Site settings
+title: Frontmen
+keywords:
+- frontmen
+- front-men
+- front-end
+- development
+baseURL: "http://localhost:8000"

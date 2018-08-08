@@ -1,5 +1,0 @@
-#!/bin/sh
-
-sass --watch css/main.scss:css/main.css --style expanded --precision 9
-
-exit 0

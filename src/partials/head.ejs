@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title><%= page.title ? `${page.title} | ${site.title}` : site.title %></title>
+<meta name="description" content="<%= page.description || site.description %>">
+<meta name="keywords" content="<%= (page.keywords || site.keywords).join(",") %>">
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<%= page.title || site.title %>" />
+<meta property="og:description" content="<%= page.description || site.description %>" />
+<meta property="og:url" content="<%= site.baseURL %><%= page.url %>" />
+<meta property="og:site_name" content="<%= site.title %>" />
+
+<link rel="canonical" href="<%= site.baseURL %><%= page.url %>">
+
+<link rel="stylesheet" href="<%= site.baseURL %>/css/main.css">
