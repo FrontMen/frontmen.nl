@@ -19,13 +19,18 @@ fse
       throw new Error(`${pathIndex} does not exist, please run build before publishing.`);
     }
   })
-  .then(() => {
-    ghPages.publish(outputPath, {}, err => {
-      if (err) {
-        throw new Error(err);
-      }
-    });
-  })
+  .then(
+    () =>
+      new Promise((resolve, reject) => {
+        ghPages.publish(outputPath, {}, err => {
+          if (err) {
+            reject(new Error(err));
+          } else {
+            resolve();
+          }
+        });
+      })
+  )
   .then(() => {
     log.success(`Publishing done.`);
   })

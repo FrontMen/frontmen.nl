@@ -20,4 +20,5 @@ fse
   .then(() => buildAssets(config))
   .then(() => {
     log.success(`Site built done`);
-  });
+  })
+  .catch(err => log.error(err));

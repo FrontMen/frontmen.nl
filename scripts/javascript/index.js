@@ -3,17 +3,18 @@ import logger from '../util/logger';
 
 const log = logger('build:js');
 
-const build = (options = {}) => {
-  Promise.resolve().then(() => {
+const build = () =>
+  new Promise((resolve, reject) => {
     log.info('Building javascript...');
 
-    // TODO
-    // const { srcPath, outputPath } = options;
-
-    exec(`webpack`, { shell: true });
-
-    log.success(`Building javascript done`);
+    exec(`webpack`, { shell: true }, error => {
+      if (error) {
+        reject(error);
+      } else {
+        log.success(`Building javascript done`);
+        resolve();
+      }
+    });
   });
-};
 
 export default build;
