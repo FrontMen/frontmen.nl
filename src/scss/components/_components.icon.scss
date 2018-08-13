@@ -17,7 +17,7 @@
 
   @each $icon in $icons {
     &--#{$icon} {
-      background-image: url('/img/icon-#{$icon}.svg');
+      background-image: url('#{$baseURL}/img/icon-#{$icon}.svg');
     }
   }
 }

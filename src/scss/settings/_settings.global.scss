@@ -29,3 +29,9 @@ $global-spacing-unit-huge: round($global-spacing-unit * 4);
 @if ($global-spacing-unit != $global-line-height) {
   @error "The value of `$global-spacing-unit` must not be changed.";
 }
+
+$baseURL: "";
+
+@if (config(env) == prod) {
+  $baseURL: "https://frontmen.github.io/frontmen.nl";
+}

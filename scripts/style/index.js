@@ -12,13 +12,14 @@ const build = (options = {}) => {
     const { srcPath, outputPath } = options;
     const scssSrcPath = `${srcPath}/scss`;
     const scssOutputPath = `${outputPath}/css`;
+    const scssSrcFile = process.env.NODE_ENV === 'production' ? 'main.prod.scss' : 'main.dev.scss';
 
     // Create css folder
     fse.mkdirsSync(path.resolve(scssOutputPath));
 
     // Render the sass
     const result = sass.renderSync({
-      file: `${scssSrcPath}/main.scss`,
+      file: `${scssSrcPath}/${scssSrcFile}`,
       outFile: `${scssOutputPath}/main.scss`
     });
 
