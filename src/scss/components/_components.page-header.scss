@@ -1,0 +1,20 @@
+.c-page-header {
+  background-color: $color-page-head-background;
+  display: flex;
+  padding: $global-spacing-unit-tiny;
+
+  @include mq($from: tiny) {
+    padding: $global-spacing-unit-small;
+  }
+
+  @include mq($from: small) {
+    padding: $global-spacing-unit;
+  }
+
+  &__title {
+    color: $color-page-head;
+    margin: 0 0 0 $global-spacing-unit-small;
+    text-transform: uppercase;
+    @include font-size($font-size-h3);
+  }
+}

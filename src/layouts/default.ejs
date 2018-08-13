@@ -4,13 +4,15 @@
     <%- include('partials/head') %>
 </head>
 <body>
-<%- include('partials/header') %>
-<%- include('partials/menu') %>
+<div class="o-layout o-layout--open">
+    <%- include('partials/header') %>
+    <%- include('partials/navigation') %>
 
-<main role="main">
-    <%- body %>
-</main>
+    <main class="o-layout__main c-page-main" role="main">
+        <%- body %>
+    </main>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
+</div>
 </body>
 </html>

@@ -1,0 +1,23 @@
+.c-ico {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+
+  $sizes: 16 20 24 30 34 40 44;
+
+  @each $size in $sizes {
+    &--#{$size} {
+      width: #{$size}px;
+      height: #{$size}px;
+    }
+  }
+
+  $icons: "menu" "close";
+
+  @each $icon in $icons {
+    &--#{$icon} {
+      background-image: url('/img/icon-#{$icon}.svg');
+    }
+  }
+}

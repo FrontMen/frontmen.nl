@@ -4,16 +4,18 @@
     <%- include('partials/head') %>
 </head>
 <body>
-<%- include('partials/header') %>
-<%- include('partials/menu') %>
+<div class="o-layout">
+    <%- include('partials/header') %>
+    <%- include('partials/navigation') %>
 
-<main role="main">
-    <article>
-        <%- body %>
-        <%- include('partials/contact') %>
-    </article>
-</main>
+    <main class="o-layout__main c-page-main" role="main">
+        <article>
+            <%- body %>
+            <%- include('partials/contact') %>
+        </article>
+    </main>
 
-<%- include('partials/footer') %>
+    <%- include('partials/footer') %>
+</div>
 </body>
 </html>

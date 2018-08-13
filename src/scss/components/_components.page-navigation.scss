@@ -1,0 +1,28 @@
+.c-page-navigation {
+  display: flex;
+  align-items: flex-start;
+  background-color: $color-page-head-background;
+  padding: $global-spacing-unit;
+
+  &__close {
+
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    color: $color-menu-item;
+    padding: $global-spacing-unit $global-spacing-unit-small;
+    @include font-size($font-size-h3);
+    @include font-weight(normal);
+    text-transform: uppercase;
+
+    @include hocus {
+      text-decoration: none;
+      color: $color-menu-item-hover;
+    }
+  }
+}

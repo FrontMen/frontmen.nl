@@ -55,10 +55,17 @@
 @import "elements/elements.links";
 
 @import "objects/objects.wrappers";
+@import "objects/objects.list-bare";
 @import "objects/objects.layout";
 
-@import "components/components.menu-icon";
-@import "components/components.page-head";
+@import "components/components.btn";
+@import "components/components.icon";
 
+@import "components/components.page-header";
+@import "components/components.page-navigation";
+@import "components/components.page-main";
+@import "components/components.page-footer";
+
+@import "utilities/utilities.a11y";
 @import "utilities/utilities.headings";
 @import "utilities/utilities.widths";

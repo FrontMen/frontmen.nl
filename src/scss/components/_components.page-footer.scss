@@ -1,0 +1,18 @@
+.c-page-footer {
+  background-color: $color-page-head-background;
+  padding: $global-spacing-unit-tiny;
+  display: flex;
+  justify-content: center;
+
+  @include mq($from: tiny) {
+
+  }
+
+  @include mq($from: small) {
+
+  }
+
+  &__logo {
+    font-size: 0;
+  }
+}

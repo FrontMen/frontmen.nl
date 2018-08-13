@@ -1,39 +1,56 @@
 /*------------------------------------*\
-  #LAYOUT
+  # GLOBAL PAGE STRUCTURE
 \*------------------------------------*/
+$layout-header-height: 90px;
+$layout-navigation-width: 400px;
 
 .o-layout {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: -$global-spacing-unit;
-  font-size: 0;
-}
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
 
-.o-layout__item {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  padding-left: $global-spacing-unit;
-  @include font-size($global-font-size);
-}
+  &__header,
+  &__main,
+  &__navigation,
+  &__footer {
+    transition: transform .3s ease-in-out;
+  }
 
-.o-layout--rev {
-  direction: rtl;
+  &__header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: $layout-header-height;
+  }
 
-  > .o-layout__item {
-    direction: ltr;
+  &__navigation {
+    position: fixed;
+    height: 100vh;
+    width: $layout-navigation-width;
+    transform: translateX($layout-navigation-width * -1);
+    transition: transform .3s ease-in-out;
+  }
+
+  &__main {
+    flex: 1;
+    margin-top: $layout-header-height;
+  }
+
+  &__footer {
+
   }
 }
 
-.o-layout--middle {
-  > .o-layout__item {
-    vertical-align: middle;
+.o-layout--open {
+  .o-layout__navigation {
+    transform: translateX(0);
   }
-}
 
-.o-layout--bottom {
-  > .o-layout__item {
-    vertical-align: bottom;
+  .o-layout__header,
+  .o-layout__main,
+  .o-layout__footer {
+    transform: translateX($layout-navigation-width);
   }
 }
