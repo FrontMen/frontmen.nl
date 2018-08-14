@@ -7,7 +7,7 @@
 // Shorthand onto specific font-stacks.
 @mixin font-family($family) {
   @if ($family == "sans-serif") {
-    font-family: PT Sans, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
   } @else if ($family == "serif") {
     font-family: Baskerville, Garamond, Palatino, "Palatino Linotype",
       "Hoefler Text", "Times New Roman", serif;
@@ -44,10 +44,10 @@
 @mixin font-weight($weight) {
   @if ($weight == normal) {
     font-weight: 400;
+  } @else if ($weight == semi-bold) {
+    font-weight: 600;
   } @else if ($weight == bold) {
     font-weight: 700;
-  } @else if ($weight == black) {
-    font-weight: 900;
   } @else {
     @warn "#{$weight} is not a valid font-weight.";
   }
