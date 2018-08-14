@@ -1,6 +1,6 @@
 .c-page-footer {
   background-color: $color-page-head-background;
-  padding: $global-spacing-unit-tiny;
+  padding: $global-spacing-unit-small;
   display: flex;
   justify-content: center;
 
@@ -14,5 +14,12 @@
 
   &__logo {
     font-size: 0;
+    height: 60px;
+
+    img {
+      height: 100%;
+      max-height: 100%;
+      width: auto;
+    }
   }
 }

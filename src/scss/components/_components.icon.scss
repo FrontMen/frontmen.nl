@@ -13,7 +13,7 @@
     }
   }
 
-  $icons: "menu" "close";
+  $icons: "menu-close" "menu-hamburger";
 
   @each $icon in $icons {
     &--#{$icon} {

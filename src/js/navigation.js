@@ -1,5 +1,5 @@
 const layout = document.querySelectorAll('.o-layout')[0];
-const toggleButton = document.querySelector('#menu-button');
+const toggleButtons = document.querySelectorAll('.js-menu-toggle');
 
 const toggleMenu = () => {
   const fn = layout.classList.contains('o-layout--open') ? 'remove' : 'add';
@@ -18,10 +18,12 @@ const closeOnClickOutside = selector => {
 };
 
 const initNavigation = () => {
-  toggleButton.addEventListener('click', e => {
-    e.stopPropagation();
-    toggleMenu();
-    closeOnClickOutside('.o-layout__navigation');
+  toggleButtons.forEach((btn) => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleMenu();
+      closeOnClickOutside('.o-layout__navigation');
+    });
   });
 };
 

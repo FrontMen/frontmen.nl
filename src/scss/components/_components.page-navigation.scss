@@ -9,7 +9,12 @@
   }
 
   &__list {
-    margin: 0;
+    list-style: none;
+    margin: 0 0 0 $global-spacing-unit;
+    flex: 1;
+  }
+  &__list-item {
+    margin-left: 0;
   }
 
   &__link {
@@ -20,9 +25,20 @@
     @include font-weight(normal);
     text-transform: uppercase;
 
+    &:first-child {
+      margin-top: $global-spacing-unit * -1;
+    }
+
     @include hocus {
       text-decoration: none;
       color: $color-menu-item-hover;
     }
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: $global-spacing-unit;
+    max-width: 60%;
+    height: auto;
   }
 }
