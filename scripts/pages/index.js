@@ -12,17 +12,14 @@ const build = (options = {}) =>
 
     // read pages
     const files = glob.sync('**/*.@(md|ejs|html)', { cwd: `${srcPath}/pages` });
-    files.forEach(file => {
-      try {
-        buildPage(file, { srcPath, outputPath, site });
-      } catch (e) {
-        log.error(`Error trying to build page`);
-        log.error(srcPath);
-        log.error(e);
-      }
-    });
-
-    log.success(`Building pages done`);
+    return Promise.all([...files.map(file => buildPage(file, { srcPath, outputPath, site }))])
+      .then(() => {
+        log.success(`Building pages done`);
+      })
+      .catch(error => {
+        log.error(`Error trying to build pages`);
+        log.error(error);
+      });
   });
 
 export default build;
