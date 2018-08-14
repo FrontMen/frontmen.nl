@@ -23,6 +23,7 @@ $layout-navigation-width: 400px;
     left: 0;
     z-index: 1;
     height: $layout-header-height;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
   }
 
   &__navigation {
@@ -52,5 +53,9 @@ $layout-navigation-width: 400px;
   .o-layout__main,
   .o-layout__footer {
     transform: translateX($layout-navigation-width);
+  }
+
+  .o-layout__header {
+    opacity: .75;
   }
 }
