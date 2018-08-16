@@ -13,6 +13,8 @@ Een hybride applicatie moest de twee bestaande native apps (iOS en Android) verv
 
 De tweede opdracht was een special feature te ontwikkelen waardoor de app meer biedt dan de gebruikelijke functies. Tele2 wilde van de MijnTele2-app een slimme zelfservice-app maken die letterlijk naar klanten luistert en hen heel gericht helpt met vragen rond hun mobiele abonnement.
 
+![TELE2 app](tele2.png 'TELE2 app gallery')
+
 ## Dat pakten we zó aan
 
 Om te beginnen hebben we in oktober 2017 het werken volgens de scrum-aanpak in een agile omgeving geïntroduceerd. We stelden een ontwikkelteam samen waarin vier developers, een test automation expert en een business analist (scrum master) samenwerkten. In korte sprints ontwikkelde het team steeds werkende componenten voor de app, die vervolgens werden getest door de eindgebruikers. Hun eerste aanraking met agile beviel Tele2 zo goed, dat deze manier van werken inmiddels voor alle ontwikkelteams wordt doorgevoerd.
