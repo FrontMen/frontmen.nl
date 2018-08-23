@@ -9,11 +9,11 @@
   margin-left: auto;
   margin-top: rem($global-spacing-unit-huge);
   margin-bottom: rem($global-spacing-unit);
+
   &__main,
   &__sub {
     margin-bottom: 60px;
     max-width: round($global-content-max-width / 1.5)
-    
   }
 }
 
