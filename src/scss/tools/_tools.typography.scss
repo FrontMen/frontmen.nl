@@ -3,22 +3,18 @@
 //\*----------------------------------*/
 
 @font-face {
-  font-family: "Stratum1";
-  src: url("/fonts/Stratum1-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Stratum1";
-  font-weight: bold;
-  src: url("/fonts/Stratum1-Bold.otf") format("opentype");
+  font-family: 'Stratum1';
+  src: url('/fonts/Stratum1-Bold.woff') format('woff'),
+  url('/fonts/Stratum1-Bold.otf') format('opentype');
 }
 
 // Mixins to help generating typographical rules.
 
 // Shorthand onto specific font-stacks.
 @mixin font-family($family) {
-  @if ($family == "sans-serif") {
+  @if ($family == 'sans-serif') {
     font-family: 'Titillium Web', sans-serif;
-  } @else if ($family == "accent") {
+  } @else if ($family == 'accent') {
     font-family: 'Stratum1', 'sans-serif';
   } @else {
     @warn "#{$family} is not a valid font-family.";
@@ -31,17 +27,9 @@
   font-size: ($font-size / $global-font-size) * 1rem;
 
   @if $line-height == auto {
-    line-height: ceil($font-size / $global-line-height) *
-      ($global-line-height / $font-size);
+    line-height: ceil($font-size / $global-line-height) * ($global-line-height / $font-size);
   } @else {
-    @if (
-      type-of($line-height) ==
-        number or
-        $line-height ==
-        inherit or
-        $line-height ==
-        normal
-    ) {
+    @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
       line-height: $line-height;
     } @else if ($line-height != none and $line-height != false) {
       @warn "D’oh! ‘#{$line-height}’ is not a valid value for `line-height`.";
