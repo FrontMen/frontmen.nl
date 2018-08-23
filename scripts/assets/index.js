@@ -1,6 +1,7 @@
 import glob from 'glob';
 import logger from '../util/logger';
-import copyAsset from './asset';
+import processImage, { IMG_FORMATS } from './image';
+import processFont, { FONT_FORMATS } from './font';
 
 const log = logger('build:assets');
 
@@ -9,9 +10,13 @@ const build = (options = {}) => {
 
   const { srcPath, outputPath } = options;
 
-  const files = glob.sync('**/*.@(svg|png|jpg|jpeg|ico|gif)', { cwd: srcPath });
+  const imgFiles = glob.sync(`**/*.@(${IMG_FORMATS})`, { cwd: srcPath });
+  const fontFiles = glob.sync(`**/*.@(${FONT_FORMATS})`, { cwd: srcPath });
 
-  return Promise.all(files.map(file => copyAsset(file, { srcPath, outputPath })))
+  return Promise.all([
+    imgFiles.map(file => processImage(file, { srcPath, outputPath })),
+    fontFiles.map(file => processFont(file, { srcPath, outputPath }))
+  ])
     .then(() => {
       log.success(`Building assets done`);
     })
@@ -20,4 +25,6 @@ const build = (options = {}) => {
     });
 };
 
+export { IMG_FORMATS, FONT_FORMATS };
 export default build;
+
