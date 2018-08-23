@@ -1,0 +1,23 @@
+.c-masthead {
+  position: relative;
+  overflow: hidden;
+  height: 720px;
+  margin-bottom: $global-spacing-unit;
+
+  @include mq($from: large) {
+    padding-top: 0;
+  }
+  &__text {
+    padding: $global-spacing-unit;
+    // margin-left: $global-spacing-unit-huge;
+    // max-width: 760px;
+  }
+  
+    &__title {
+      @include font-weight(bold);
+      @include font-size(70px);
+    }
+
+}
+
+
