@@ -17,6 +17,7 @@
   }
 
   &__title {
+    @include font-family(accent);
     @include font-size($font-size-h3);
     @include truncate();
     flex: 1;
