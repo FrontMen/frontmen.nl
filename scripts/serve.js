@@ -4,10 +4,10 @@ import server from './server';
 import logger from './util/logger';
 import config from './config';
 
-import buildPages from './pages';
+import buildPages, { PAGE_FORMATS } from './pages';
 import buildJavascript from './javascript';
 import buildStyle from './style';
-import buildAssets from './assets';
+import buildAssets, { IMG_FORMATS, FONT_FORMATS } from './assets';
 
 const log = logger('serve');
 
@@ -29,7 +29,8 @@ const watcher = (ext, buildTask) => {
   );
 };
 
-watcher('(ejs|html|md)', buildPages);
+watcher(`(${PAGE_FORMATS})`, buildPages);
 watcher('scss', buildStyle);
 watcher('js', buildJavascript);
-watcher('(svg|png|jpg|jpeg|ico|gif)', buildAssets);
+watcher(`(${IMG_FORMATS})`, buildAssets);
+watcher(`(${FONT_FORMATS})`, buildAssets);

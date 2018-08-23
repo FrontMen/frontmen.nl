@@ -21,6 +21,7 @@
     display: block;
     color: $color-menu-item;
     padding: $global-spacing-unit $global-spacing-unit-small;
+    @include font-family(accent);
     @include font-size($font-size-h3);
     @include font-weight(normal);
     text-transform: uppercase;
