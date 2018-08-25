@@ -5,5 +5,6 @@ module.exports = {
   output: {
     filename: 'js/index.js',
     path: path.resolve(__dirname, 'dist')
-  }
+  },
+  devtool: 'eval-source-map'
 };

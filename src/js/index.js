@@ -1,1 +1,2 @@
-import navigation from './navigation';
+require('./navigation');
+require('picturefill');
