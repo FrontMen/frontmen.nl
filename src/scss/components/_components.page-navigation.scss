@@ -36,6 +36,10 @@
     }
   }
 
+  &__list &__list &__link {
+    @include font-size($font-size-h4);
+  }
+
   &__logo {
     position: absolute;
     bottom: $global-spacing-unit;
