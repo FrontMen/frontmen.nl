@@ -1,10 +1,12 @@
 .c-page-intro {
+  margin: $global-spacing-unit-huge 0;
+
   &__title {
-    @include font-size(70px);
-    margin: $global-spacing-unit-huge 0;
+    @include font-size(64px);
+
   }
 
   &__excerpt {
-
+    @include font-size(32px);
   }
 }
