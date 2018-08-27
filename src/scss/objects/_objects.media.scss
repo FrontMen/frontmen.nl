@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #MEDIA
+\*------------------------------------*/
+
+.o-media {
+  display: flex;
+  align-items: flex-start;
+  max-width: 20rem;
+  margin: 0 0 rem($global-spacing-unit) 0;
+  &__img {
+    width: 64px; //magic number
+    margin: 0 rem(40px) 0 0;
+  }
+  &__content {
+    flex: 1;
+    >p, >h2 {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    margin: 0 0 0.5rem 0;
+  }
+}

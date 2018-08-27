@@ -1,7 +1,86 @@
-<footer role="contentinfo" class="c-page-footer o-layout__footer">
-    <a href="<%= site.baseURL %>" class="c-page-footer__logo">
-        <img src="<%= site.baseURL %>/img/fm-monogram-logo.svg" alt="Frontmen">
-    </a>
+<footer role="contentinfo" class="c-page-footer o-layout__footer" style="color: #fff;">
+    <section class="c-page-footer__logo">
+        <a href="<%= site.baseURL %>">
+            <img src="<%= site.baseURL %>/img/fm-monogram-logo.svg" alt="Frontmen">
+        </a>
+    </section>
+    <div style="display:flex;">
+        <nav style="width:50%;">
+            <h3>Our website</h3>
+            <ul class="o-list-bare">
+                <li class="o-list-bare__item">
+                    <a href="<%= site.baseURL %>/">Home</a>
+                </li>
+                <li class="o-list-bare__item">
+                    <a href="<%= site.baseURL %>/">Frontend first</a>
+                </li>
+                <li class="o-list-bare__item">
+                    <a href="<%= site.baseURL %>/">how we work</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-and-s">
+            <div class="contact">
+                <h3>Frontmen</h3>
+                <div style="display:flex;">
+                    <address>
+                        Tractieweg 41
+                        <br> Studio B
+                        <br> 3534 AP Utrecht
+                    </address>
+                    <div>
+                        <a href="tel:+31302658108">
+                            <span>T</span> +31 (0)30 - 26 58 108</a>
+                        <br/>
+                        <a href="mailto:info@frontmen.nl">
+                            <span>E</span> info@frontmen.nl</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="o-media">
+                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <div class="o-media__content">
+                        <p>We write at</p>
+                        <h3>Medium</h3>
+                    </div>
+                </div>
+                <div class="o-media">
+                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <div class="o-media__content">
+                        <p>We meet at</p>
+                        <h3>MeetUp</h3>
+                    </div>
+                </div>
+                <div class="o-media">
+                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <div class="o-media__content">
+                        <p>We work at</p>
+                        <h3>LinkedIn</h3>
+                    </div>
+                </div>
+                <div class="o-media">
+                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <div class="o-media__content">
+                        <p>We converse at</p>
+                        <h3>Twitter</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="c-page-foot">
+        <ul class="o-list-inline c-nav-secondary">
+            <li class="o-list-inline__item c-nav-secondary__item">
+                <a href="<%= site.baseURL %>" class="c-nav-secondary__link">Frontmen</a>
+            </li>
+            |
+            <li class="o-list-inline__item c-nav-secondary__item">
+                <a href="<%= site.baseURL %>/privacy" class="c-nav-secondary__link--accent">View privacy note</a>
+            </li>
+        </ul>
+    </div>
 </footer>
 
 <script src="<%= site.baseURL %>/js/index.js"></script>
