@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  #NAV-SECONDARY
+\*------------------------------------*/
+
+.c-nav-secondary {
+  text-align: center;
+
+  &__item {
+    padding-right: $global-spacing-unit-small;
+    padding-left:  $global-spacing-unit-small;
+    
+  }
+  &__link {
+    @include font-weight(normal);
+    &--accent {
+      @include font-weight(normal);
+      text-decoration: underline;
+    }
+  }
+}
