@@ -30,9 +30,13 @@
       margin-top: $global-spacing-unit * -1;
     }
 
-    @include hocus {
-      text-decoration: none;
-      color: $color-menu-item-hover;
+    @at-root {
+      a#{&} {
+        @include hocus {
+          text-decoration: none;
+          color: $color-menu-item-hover;
+        }
+      }
     }
   }
 
