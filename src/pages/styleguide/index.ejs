@@ -1,0 +1,53 @@
+---
+title: Styleguide
+---
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Very large page title</h1>
+    <p class="c-page-intro__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi blanditiis ex fuga.</p>
+</div>
+
+<div class="o-wrapper-content">
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <h1>Heading 4</h1>
+    <h1>Heading 5</h1>
+    <h1>Heading 6</h1>
+</div>
+
+<div class="o-wrapper">
+    <h2>.o-wrapper</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<div class="o-wrapper-content">
+    <h2>.o-wrapper</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<div class="o-wrapper-content">
+    <h2>Blockquote</h2>
+    <%- include('./partials/blockquote', {
+        quote: "Some random quote from Jac about scrum.",
+        name: "Jac",
+        company: "jPoint"
+    }) %>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<%- include('./partials/medium', {
+    title: "Big block to get your attention",
+    image: "https://placehold.it/800x800?text=Awesome+image+here",
+    url: "http://lmgtfy.com/?q=how+to+write+JS",
+    excerpt: "This excerpt is here to get you really interested in what we write about. If we succeed you will be occupied for hours on hour Medium blog."
+}) %>
