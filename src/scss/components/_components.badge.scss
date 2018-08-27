@@ -1,0 +1,65 @@
+@mixin fmDiamond($fill) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 392"><defs><path id="a" d="M144 0L0 82.526v226.948L144 392l144-82.526V82.526z"/></defs><use fill="#{$fill}" fill-rule="evenodd" xlink:href="#a"/></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin fmDiamondSize($width) {
+  $diamond-width: 288px;
+  $diamond-height: 392px;
+  $ratio: $diamond-width / $width;
+
+  width: #{$width}px;
+  height: #{$diamond-height / $ratio}px;
+}
+
+.c-badge-bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-badge {
+  @include fmDiamond($color-badge);
+  @include fmDiamondSize(200);
+  @include font-size(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: $global-spacing-unit-small;
+
+  $badge-sizes: 150 18px, 100 16px;
+  @each $diamond-size, $font-size in $badge-sizes {
+    &--#{$diamond-size} {
+      @include fmDiamondSize($diamond-size);
+      @include font-size($font-size);
+    }
+  }
+
+  &__logo {
+    max-width: 70%;
+    width: 70%;
+    height: auto;
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+  &__name {
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &--project {
+    .c-badge__logo {
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &--ah       { @include fmDiamond(#201E33); }
+  &--klm      { @include fmDiamond(#00E6BF); }
+  &--quby     { @include fmDiamond(#FF5900); }
+  &--rabobank { @include fmDiamond(#FF5900); }
+  &--tele2    { @include fmDiamond(#00E6BF); }
+}
