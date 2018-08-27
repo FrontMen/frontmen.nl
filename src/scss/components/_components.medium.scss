@@ -1,0 +1,45 @@
+.c-medium {
+  background-color: $color-brand-secondary;
+  margin: $global-spacing-unit-huge 0;
+  padding: $global-spacing-unit-huge 0;
+
+  &__title {
+    flex: 1 100%;
+    color: $color-white;
+  }
+
+  &__subtitle {
+    flex: 1 100%;
+    order: -1;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  &__img {
+    flex: 1;
+    align-self: flex-start;
+    display: block;
+    width: 40%;
+    margin-right: $global-spacing-unit-large;
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__excerpt {
+    flex: 1;
+  }
+
+  &__button {
+    flex: 0;
+    align-self: flex-end;
+  }
+}

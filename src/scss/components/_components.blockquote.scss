@@ -1,0 +1,41 @@
+.c-blockquote {
+  float: right;
+  width: 40%;
+  margin-left: 10%;
+  color: $color-brand-primary;
+
+  &__content {
+    @include font-size(28px);
+  }
+
+  $line-width: 2px;
+
+  &__footer {
+    position: relative;
+    border-top: solid $line-width $color-brand-primary;
+    padding-top: $global-spacing-unit-large;
+
+    $arrow-size-outer: $global-spacing-unit-large;
+    $arrow-size-inner: ($global-spacing-unit-large - ($line-width * 1.5));
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: $line-width * -1;
+      left: 50%;
+      border-style: solid;
+      border-width: $arrow-size-outer $arrow-size-outer 0 0;
+    }
+
+    &:before {
+      border-color: $color-brand-primary transparent transparent transparent;
+    }
+
+    &:after {
+      border-color: $color-white transparent transparent transparent;
+      top: ($line-width * 2) * -1;
+      left: calc(50% + #{$line-width});
+      border-width: $arrow-size-inner $arrow-size-inner 0 0;
+    }
+  }
+}

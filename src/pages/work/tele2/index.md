@@ -1,8 +1,11 @@
 ---
-title: Scrum at TELE2
+title: Tele2
 layout: work
+page_title: Hoe wij Tele2 aan de scrum kregen én een innovatieve app met chatbot ontwikkelden voor alle vragen van Tele2 gebruikers
+excerpt: Tele2 doet er alles aan haar abonnees de allerbeste klantervaring te geven. Daar hoort ook een geweldig werkende MijnTele2-app bij. Met hulp van 800 klanten (en een enthousiast FrontMen-team) werd de bestaande app radicaal vernieuwd. Daarbij sloegen we twee uitdagende vliegen in één klap.
+featured: tele2.png
+featured_title: Image caption here...
 ---
-
 # Hoe wij Tele2 aan de scrum kregen én een innovatieve app met chatbot ontwikkelden voor alle vragen van Tele2 gebruikers
 
 Tele2 doet er alles aan haar abonnees de allerbeste klantervaring te geven. Daar hoort ook een geweldig werkende MijnTele2-app bij. Met hulp van 800 klanten (en een enthousiast FrontMen-team) werd de bestaande app radicaal vernieuwd. Daarbij sloegen we twee uitdagende vliegen in één klap.

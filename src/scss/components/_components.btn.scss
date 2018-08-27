@@ -9,4 +9,11 @@
     padding: 0;
     font-size: 0;
   }
+
+  &--secondary {
+    padding: $global-spacing-unit-small $global-spacing-unit;
+    background: $color-button-secondary;
+    color: $color-white;
+    text-transform: uppercase;
+  }
 }

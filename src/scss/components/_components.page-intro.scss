@@ -1,0 +1,10 @@
+.c-page-intro {
+  &__title {
+    @include font-size(70px);
+    margin: $global-spacing-unit-huge 0;
+  }
+
+  &__excerpt {
+
+  }
+}

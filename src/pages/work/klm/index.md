@@ -1,9 +1,11 @@
 ---
-title: KLM app 
+title: KLM
 layout: work
+page_title: How we helped KLM reinvent their online experience
+excerpt: Aenean sollicitudin, quam vel fermentum consectetur, nunc enim imperdiet ipsum, non scelerisque sem sapien non mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mattis, turpis vel blandit volutpat, nulla nunc elementum nunc, nec ornare felis enim vitae nibh.
+featured: klm.jpg
+featured_title: Image caption here...
 ---
-KLM example page
-============
 
 Paragraphs are separated by a blank line.
 

@@ -9,8 +9,19 @@
     <%- include('partials/navigation') %>
 
     <main class="o-layout__main c-page-main" role="main">
-        <article class="o-wrapper">
-            <%- body %>
+        <article>
+            <div class="o-wrapper c-page-intro">
+                <h1 class="c-page-intro__title"><%= page.page_title %></h1>
+                <p class="c-page-intro__text"><%= page.excerpt %></p>
+            </div>
+
+            <%- include('./partials/featured-image', {
+                title: page.featured_title,
+                image: page.featured
+            }) %>
+
+            <div class="o-wrapper"><%- body %></div>
+
             <%- include('partials/contact') %>
         </article>
     </main>

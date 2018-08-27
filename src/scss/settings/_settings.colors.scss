@@ -29,8 +29,12 @@ $color-links: inherit;
 $color-links-prose: $color-brand-primary;
 $color-links-prose-hover: $color-brand-primary-shadow;
 
+$color-button: $color-brand-primary;
+$color-button-secondary: $color-blue-dark;
+
 $color-page-head-background: $color-blue-dark;
-$color-page-head: $color-grey;
+$color-page-head: $color-grey-light;
+$color-page-head-sub: $color-grey;
 
 $color-menu-item: $color-grey;
 $color-menu-item-hover: $color-grey-light;

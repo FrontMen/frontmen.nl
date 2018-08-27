@@ -4,7 +4,7 @@
 
 .o-headline {
   @include clearfix();
-  max-width: $global-content-max-width;
+  max-width: $global-max-width;
   margin-right: auto;
   margin-left: auto;
   margin-top: rem($global-spacing-unit-huge);
@@ -13,7 +13,7 @@
   &__main,
   &__sub {
     margin-bottom: 60px;
-    max-width: round($global-content-max-width / 1.5)
+    max-width: round($global-max-width / 1.5)
   }
 }
 

@@ -1,0 +1,19 @@
+.c-featured {
+  position: relative;
+  display: block;
+  margin-bottom: $global-spacing-unit;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 0;
+    left: $global-spacing-unit;
+    background: rgba(0,0,0,.5);
+    color: $color-white;
+    padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  }
+}

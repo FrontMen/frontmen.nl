@@ -2,11 +2,18 @@
   #WRAPPERS
 \*------------------------------------*/
 
-.o-wrapper {
+.o-wrapper, .o-wrapper-content {
   @include clearfix();
-  max-width: $global-content-max-width;
+  position: relative;
   padding-right: $global-spacing-unit;
   padding-left: $global-spacing-unit;
   margin-right: auto;
   margin-left: auto;
+}
+.o-wrapper {
+  max-width: $global-max-width;
+}
+
+.o-wrapper-content {
+  max-width: $global-max-width-content;
 }

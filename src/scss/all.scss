@@ -52,6 +52,7 @@
 
 @import "elements/elements.page";
 @import "elements/elements.headings";
+@import "elements/elements.images";
 @import "elements/elements.links";
 
 @import "objects/objects.wrappers";
@@ -59,14 +60,19 @@
 @import "objects/objects.layout";
 @import "objects/objects.headline";
 
+@import "components/components.blockquote";
 @import "components/components.btn";
+@import "components/components.featured";
 @import "components/components.icon";
+@import "components/components.masthead";
+@import "components/components.medium";
 
+// Page level components
 @import "components/components.page-header";
 @import "components/components.page-navigation";
 @import "components/components.page-main";
 @import "components/components.page-footer";
-@import "components/components.masthead";
+@import "components/components.page-intro";
 
 @import "utilities/utilities.a11y";
 @import "utilities/utilities.headings";

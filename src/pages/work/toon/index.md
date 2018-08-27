@@ -1,10 +1,11 @@
 ---
-title: Toon smart thermostat 
+title: Toon
 layout: work
+page_title: Toon smart thermostat
+excerpt: Aenean sollicitudin, quam vel fermentum consectetur, nunc enim imperdiet ipsum, non scelerisque sem sapien non mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent mattis, turpis vel blandit volutpat, nulla nunc elementum nunc, nec ornare felis enim vitae nibh.
+featured: toon_buurman_en_buurman.jpg
+featured_title: Image caption here...
 ---
-Toon
-============
-
 *View the [source of this content](http://github.github.com/github-flavored-markdown/sample_content.html).*
 
 Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:

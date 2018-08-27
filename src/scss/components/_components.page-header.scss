@@ -23,7 +23,11 @@
     flex: 1;
     text-transform: uppercase;
     color: $color-page-head;
-    margin: 0 0 0 $global-spacing-unit-small;
+    margin: 0 0 0 $global-spacing-unit;
+
+    &-sub {
+      color: $color-page-head-sub;
+    }
   }
 
   &__logo {
@@ -34,6 +38,7 @@
       height: 100%;
       max-height: 100%;
       width: auto;
+      max-width: none;
     }
   }
 }

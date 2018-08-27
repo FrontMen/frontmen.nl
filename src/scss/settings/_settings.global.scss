@@ -12,6 +12,10 @@ $global-line-height: 22px !default;
 $global-radius: 3px !default;
 $global-transition: 0.333333333s !default;
 
+// Container sizes
+$global-max-width: 1280px;
+$global-max-width-content: 1150px;
+
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
 //                               W A R N I N G                                //
@@ -25,7 +29,7 @@ $global-spacing-unit-small: round($global-spacing-unit / 2);
 $global-spacing-unit-large: round($global-spacing-unit * 2);
 $global-spacing-unit-huge: round($global-spacing-unit * 4);
 
-$global-content-max-width: 1280px;
+
 
 // Sanity check, make sure spacing and line height match
 @if ($global-spacing-unit != $global-line-height) {

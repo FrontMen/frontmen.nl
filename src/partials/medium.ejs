@@ -1,7 +1,16 @@
-<aside>
-    <h1><%= title %></h1>
-    <h2>Frontmen on Medium</h2>
-    <img src="<%= image %>" alt="<%= title %>">
-    <p><%= excerpt %></p>
-    <a href="<%= url %>" target="_blank">Read the full article</a>
+<aside class="c-medium">
+    <div class="o-wrapper-content">
+        <h1 class="c-medium__title"><%= title %></h1>
+        <h2 class="c-medium__subtitle">Frontmen on Medium</h2>
+    </div>
+
+    <div class="o-wrapper c-medium__content">
+        <a class="c-medium__img" href="<%= url %>" target="_blank">
+            <img src="<%= image %>" alt="<%= title %>">
+        </a>
+        <div class="c-medium__body">
+          <p class="c-medium__excerpt"><%= excerpt %></p>
+          <a class="c-medium__button c-btn c-btn--secondary" href="<%= url %>" target="_blank">Read the full article</a>
+        </div>
+    </div>
 </aside>

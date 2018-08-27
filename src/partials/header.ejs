@@ -4,7 +4,13 @@
         <span class="u-hidden-visually">Menu</span>
     </button>
 
-    <h1 class="c-page-header__title"><%= page.title %></h1>
+
+    <h1 class="c-page-header__title">
+        <%if (page.layout !== "default") { %>
+        <span class="c-page-header__title-sub"><%= page.layout %></span>
+        <% } %>
+        <%= page.title %>
+    </h1>
 
     <a href="<%= site.baseURL %>" class="c-page-header__logo">
         <img src="<%= site.baseURL %>/img/fm-monogram-logo.svg" alt="Frontmen">
