@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <%- include('partials/head') %>
+    <%- include('_partials/head') %>
 </head>
 <body>
 <div class="o-layout">
-    <%- include('partials/header') %>
-    <%- include('partials/navigation') %>
+    <%- include('_partials/header') %>
+    <%- include('_partials/navigation') %>
 
     <main class="o-layout__main c-page-main" role="main">
         <article>
@@ -15,18 +15,18 @@
                 <p class="c-page-intro__excerpt"><%= page.excerpt %></p>
             </div>
 
-            <%- include('./partials/featured-image', {
+            <%- include('./_components/featured', {
                 title: page.featured_title,
                 image: page.featured
             }) %>
 
             <div class="o-wrapper"><%- body %></div>
 
-            <%- include('partials/contact') %>
+            <%- include('_partials/contact') %>
         </article>
     </main>
 
-    <%- include('partials/footer') %>
+    <%- include('_partials/footer') %>
 </div>
 </body>
 </html>
