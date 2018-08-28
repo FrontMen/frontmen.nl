@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+    <g fill="none" fill-rule="nonzero">
+        <path fill="#E6E6E6" d="M32.368 80l-15.876 27.5L32.368 135l15.877-27.5z"/>
+        <path fill="#A6A5AD" d="M127.632 25l-15.878 27.5L127.632 80l15.876-27.5z"/>
+        <path fill="#E6E6E6" d="M143.508 52.5L95.876 135h31.756l31.753-55zM95.876 25L32.368 135h31.755l63.509-110zM32.368 25L.614 80l15.878 27.5L64.123 25z"/>
+        <path fill="#FFF" fill-opacity=".2" d="M95.876 25l15.878 27.5L127.632 25z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M80 52.5L95.876 25l15.878 27.5z"/>
+        <path fill="none" d="M80 52.5L95.876 80l15.878-27.5z"/>
+        <path fill="#000" fill-opacity=".1" d="M64.123 80L80 52.5 95.876 80z"/>
+        <path fill="#000" fill-opacity=".2" d="M64.123 80L80 107.5 95.876 80z"/>
+        <path fill="#000" fill-opacity=".3" d="M48.245 107.5L64.123 80 80 107.5z"/>
+        <path fill="#000" fill-opacity=".4" d="M48.245 107.5L64.123 135 80 107.5z"/>
+        <path fill="#000" fill-opacity=".5" d="M32.368 135l15.877-27.5L64.123 135z"/>
+        <path fill="#FFF" fill-opacity=".2" d="M32.368 25l15.877 27.5L64.123 25z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M16.492 52.5L32.368 25l15.877 27.5z"/>
+        <path fill="none" d="M16.492 52.5L32.368 80l15.877-27.5z"/>
+        <path fill="#000" fill-opacity=".1" d="M.615 80l15.877-27.5L32.368 80z"/>
+        <path fill="#000" fill-opacity=".2" d="M.615 80l15.877 27.5L32.368 80z"/>
+        <path fill="none" d="M48.245 107.5L32.368 80l-15.876 27.5z"/>
+        <path fill="#000" fill-opacity=".2" d="M48.245 107.5L32.368 135l-15.876-27.5zM143.508 52.5L127.632 25l-15.878 27.5z"/>
+        <path fill="none" d="M143.508 52.5L127.632 80l-15.878-27.5z"/>
+        <path fill="#FFF" fill-opacity=".2" d="M127.632 80l15.876-27.5L159.385 80z"/>
+        <path fill="#FFF" fill-opacity=".1" d="M127.632 80l15.876 27.5L159.385 80z"/>
+        <path fill="none" d="M111.754 107.5L127.632 80l15.876 27.5z"/>
+        <path fill="#000" fill-opacity=".1" d="M111.754 107.5l15.878 27.5 15.876-27.5z"/>
+        <path fill="#000" fill-opacity=".2" d="M95.876 135l15.878-27.5 15.878 27.5z"/>
+    </g>
+</svg>

@@ -2,13 +2,14 @@
   # GLOBAL PAGE STRUCTURE
 \*------------------------------------*/
 $layout-header-height: 90px;
-$layout-navigation-width: 400px;
+$layout-navigation-width: 300px;
 
 .o-layout {
   display: flex;
   min-height: 100%;
   flex-direction: column;
 
+  &__header,
   &__main,
   &__navigation,
   &__footer {
@@ -22,13 +23,12 @@ $layout-navigation-width: 400px;
     left: 0;
     z-index: 1;
     height: $layout-header-height;
-    transition: opacity .3s ease-in-out;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
   }
 
   &__navigation {
     position: fixed;
     height: 100vh;
-    z-index: 2;
     width: $layout-navigation-width;
     transform: translateX($layout-navigation-width * -1);
     transition: transform .3s ease-in-out;
@@ -49,6 +49,7 @@ $layout-navigation-width: 400px;
     transform: translateX(0);
   }
 
+  .o-layout__header,
   .o-layout__main,
   .o-layout__footer {
     transform: translateX($layout-navigation-width);

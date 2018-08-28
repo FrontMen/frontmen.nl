@@ -3,6 +3,12 @@
   margin: $global-spacing-unit-huge 0;
   padding: $global-spacing-unit-huge 0;
 
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     flex: 1 100%;
     color: $color-white;

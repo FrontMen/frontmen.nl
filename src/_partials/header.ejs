@@ -4,15 +4,17 @@
         <span class="u-hidden-visually">Menu</span>
     </button>
 
-
     <h1 class="c-page-header__title">
-        <%if (page.layout !== "default") { %>
+        <%if (typeof page.title !== "undefined") { %>
         <span class="c-page-header__title-sub"><%= page.layout %></span>
         <% } %>
         <%= page.title %>
     </h1>
 
+    <%if (typeof page.title !== "undefined") { %>
     <a href="<%= site.baseURL %>" class="c-page-header__logo">
         <img src="<%= site.baseURL %>/img/fm-monogram-logo.svg" alt="Frontmen">
     </a>
+    <% } %>
+
 </header>

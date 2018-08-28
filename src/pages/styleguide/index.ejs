@@ -1,0 +1,88 @@
+---
+title: Styleguide
+---
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Main page title</h1>
+    <p class="c-page-intro__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi blanditiis ex fuga.</p>
+</div>
+
+<div class="o-wrapper-content">
+    <h1>Heading 1</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h4>Heading 4</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h5>Heading 5</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h6>Heading 6</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+</div>
+
+<div class="o-wrapper">
+    <h2>.o-wrapper</h2>
+    <p><strong>Used for images or special blocks (e.g. Medium) which can be a bit wider than the content.</strong></p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<div class="o-wrapper-content">
+    <h2>.o-wrapper-content</h2>
+    <p><strong>Used for content blocks which should be a little bit smaller for readability.</strong></p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<div class="o-wrapper">
+    <h2>Badges</h2>
+
+    <h3>Tech</h3>
+    <% var techs = ['angular', 'backbone', 'css', 'ember', 'html', 'javascript', 'jest', 'polymer', 'react', 'redux', 'redux-saga']; %>
+    <div class="c-badge-bar">
+    <% techs.forEach(function(tech){ %>
+    <%- include('_components/badge', { type: "tech", name: tech }) %>
+    <% }); %>
+    </div>
+
+    <h3>Projects</h3>
+    <% var projects = ['ah', 'klm', 'rabobank', 'tele2', 'quby']; %>
+    <div class="c-badge-bar">
+    <% projects.forEach(function(project){ %>
+    <%- include('_components/badge', { type: "project", name: project }) %>
+    <% }); %>
+    </div>
+
+    <h3>Sizes</h3>
+    <div class="c-badge-bar">
+    <%- include('_components/badge', { type: "tech", name: "angular" }) %>
+    <%- include('_components/badge', { type: "tech", name: "angular", size: 150 }) %>
+    <%- include('_components/badge', { type: "tech", name: "angular", size: 100 }) %>
+    </div>
+</div>
+
+<div class="o-wrapper-content">
+    <h2>Blockquote</h2>
+    <%- include('./_components/blockquote', {
+        quote: "Some random quote from Jac about scrum.",
+        name: "Jac",
+        company: "jPoint"
+    }) %>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet beatae dolorem nihil nostrum nulla odio omnis perferendis, saepe temporibus. Blanditiis consequatur deserunt eveniet impedit ipsam, qui reiciendis repellendus similique.
+    </p>
+</div>
+
+<%- include('./_components/medium', {
+    title: "Big block to get your attention",
+    image: "https://placehold.it/800x800?text=Awesome+image+here",
+    url: "http://lmgtfy.com/?q=how+to+write+JS",
+    excerpt: "This excerpt is here to get you really interested in what we write about. If we succeed you will be occupied for hours on hour Medium blog."
+}) %>

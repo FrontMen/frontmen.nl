@@ -1,5 +1,6 @@
 .c-page-intro {
-  margin: $global-spacing-unit-huge 0;
+  margin-top: $global-spacing-unit-huge;
+  margin-bottom: $global-spacing-unit-huge;
 
   &__title {
     @include font-size(64px);

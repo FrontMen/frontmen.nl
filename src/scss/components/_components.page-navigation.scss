@@ -1,16 +1,13 @@
 .c-page-navigation {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   background-color: $color-page-head-background;
   padding: $global-spacing-unit;
-
-  &__close {
-
-  }
+  overflow: scroll;
 
   &__list {
     list-style: none;
-    margin: 0 0 0 $global-spacing-unit;
+    margin: 0;
     flex: 1;
   }
   &__list-item {
@@ -30,19 +27,29 @@
       margin-top: $global-spacing-unit * -1;
     }
 
-    @include hocus {
-      text-decoration: none;
-      color: $color-menu-item-hover;
+    @at-root {
+      a#{&} {
+        @include hocus {
+          text-decoration: none;
+          color: $color-menu-item-hover;
+        }
+      }
     }
   }
 
+  // Second level
   &__list &__list &__link {
     @include font-size($font-size-h4);
+
+    &:before {
+      content: '- ';
+    }
+  }
+  &__list &__list {
+    list-style: disc;
   }
 
   &__logo {
-    position: absolute;
-    bottom: $global-spacing-unit;
     max-width: 60%;
     height: auto;
   }
