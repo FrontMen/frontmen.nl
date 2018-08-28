@@ -3,6 +3,8 @@
 .c-page-footer {
   background-color: $color-page-footer-background;
   color: $color-page-footer;
+  padding-top: $global-spacing-unit-large;
+
 
   @include mq($from: tiny) {
 
@@ -10,6 +12,11 @@
 
   @include mq($from: small) {
 
+  }
+  &__title {
+    color: $color-page-footer-title;
+    @include font-weight(bold);
+    @include font-size(20px);
   }
 
   &__logo {
