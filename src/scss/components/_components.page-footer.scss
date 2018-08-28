@@ -1,8 +1,8 @@
+
+// Page footer
 .c-page-footer {
-  background-color: $color-page-head-background;
-  padding: $global-spacing-unit-small;
-  display: flex;
-  justify-content: center;
+  background-color: $color-page-footer-background;
+  color: $color-page-footer;
 
   @include mq($from: tiny) {
 
@@ -15,6 +15,8 @@
   &__logo {
     font-size: 0;
     height: 60px;
+    text-align: center;
+    margin-bottom: $global-spacing-unit;
 
     img {
       height: 100%;
@@ -22,4 +24,10 @@
       width: auto;
     }
   }
+}
+
+.c-page-foot {
+  padding: $global-spacing-unit;
+  background-color: $color-page-foot-background;
+  color: $color-page-foot;
 }
