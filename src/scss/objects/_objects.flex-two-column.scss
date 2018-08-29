@@ -1,0 +1,13 @@
+.o-flex-two-column {
+  display: flex;
+  justify-items: flex-start;
+  &__item {
+    flex: 1;
+  } 
+  @include mq($from:tiny) {
+    &__item {
+      flex: 1;
+      flex-basis: 50%;
+    } 
+  }
+}
