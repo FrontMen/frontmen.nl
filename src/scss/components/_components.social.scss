@@ -1,0 +1,10 @@
+.c-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include mq($from: tiny) {
+    &__link {
+      flex-basis: 50%;
+    }
+  }
+}
