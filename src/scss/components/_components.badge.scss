@@ -22,7 +22,7 @@
 .c-badge {
   @include fmDiamond($color-badge);
   @include fmDiamondSize(200);
-  @include font-size(20px);
+  @include font-size($font-size-h4);
   display: flex;
   flex-direction: column;
   align-items: center;

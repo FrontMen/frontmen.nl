@@ -1,0 +1,9 @@
+<figure class="c-image">
+    <picture>
+        <source srcset="<%= image %>" media="(min-width: 1200px)">
+        <source srcset="<%= image.split('.').join('@lg.') %>" media="(min-width: 1024px)">
+        <source srcset="<%= image.split('.').join('@md.') %>" media="(min-width: 720px)">
+        <source srcset="<%= image.split('.').join('@sm.') %>" media="(min-width: 480px)">
+        <img class="c-image__img" srcset="<%= image.split('.').join('@xs.') %>" alt="<%= title %>" />
+    </picture>
+</figure>

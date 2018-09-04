@@ -12,10 +12,10 @@
     // margin-left: $global-spacing-unit-huge;
     // max-width: 760px;
   }
-  
+
     &__title {
       @include font-weight(bold);
-      @include font-size(70px);
+      @include font-size($font-size-h1);
     }
 
 }

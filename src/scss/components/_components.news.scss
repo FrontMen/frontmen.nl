@@ -1,0 +1,38 @@
+.c-news {
+  position: relative;
+  margin-bottom: $global-spacing-unit;
+
+  &__link {
+    display: block;
+
+    @include hocus {
+      outline: none;
+    }
+  }
+
+  &__image {
+
+  }
+
+  &__title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: $global-spacing-unit;
+    text-align: center;
+
+    @include font-size($font-size-h4);
+    @include font-weight(normal);
+    color: $color-white;
+
+    @include mq($from: small) {
+      @include font-size($font-size-h3);
+    }
+
+    @include mq($from: medium) {
+      @include font-size($font-size-h2);
+    }
+  }
+}

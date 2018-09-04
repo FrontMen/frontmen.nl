@@ -3,11 +3,11 @@
   margin-bottom: $global-spacing-unit-huge;
 
   &__title {
-    @include font-size(64px);
+    @include font-size($font-size-h1);
 
   }
 
   &__excerpt {
-    @include font-size(32px);
+    @include font-size($font-size-h3);
   }
 }

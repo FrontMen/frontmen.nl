@@ -3,7 +3,6 @@
   margin: $global-spacing-unit-huge 0;
   padding: $global-spacing-unit-huge 0;
 
-
   &__header {
     display: flex;
     flex-direction: column;
@@ -19,19 +18,25 @@
     order: -1;
   }
 
-
   &__content {
     display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
+    flex-flow: column;
+
+    @include mq($from: medium) {
+      flex-flow: row wrap;
+      align-items: stretch;
+    }
   }
 
   &__img {
     flex: 1;
     align-self: flex-start;
     display: block;
-    width: 40%;
-    margin-right: $global-spacing-unit-large;
+
+    @include mq($from: medium) {
+      width: 40%;
+      margin-right: $global-spacing-unit-large;
+    }
   }
 
   &__body {
@@ -42,10 +47,11 @@
 
   &__excerpt {
     flex: 1;
+    @include font-size($font-size-h3);
   }
 
   &__button {
     flex: 0;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 }

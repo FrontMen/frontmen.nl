@@ -27,11 +27,11 @@
     flex-grow: 1;
     width: 100%;
   }
- 
+
   &__title {
     color: $color-page-footer-title;
     @include font-weight(bold);
-    @include font-size(20px);
+    @include font-size($font-size-h4);
   }
 
   &__logo {

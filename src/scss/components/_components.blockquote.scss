@@ -1,15 +1,8 @@
 .c-blockquote {
-
   color: $color-brand-primary;
 
-  @include mq($from: medium) {
-    float: right;
-    width: 40%;
-    margin-left: 10%;
-  }
-
   &__content {
-    @include font-size(48px);
+    @include font-size($font-size-h2);
   }
 
   $line-width: 2px;
@@ -21,12 +14,13 @@
 
     $arrow-size-outer: $global-spacing-unit-large;
     $arrow-size-inner: ($global-spacing-unit-large - ($line-width * 1.5));
+    $arrow-left-offset: 25%;
 
     &:before, &:after {
       content: '';
       position: absolute;
       top: $line-width * -1;
-      left: 50%;
+      left: $arrow-left-offset;
       border-style: solid;
       border-width: $arrow-size-outer $arrow-size-outer 0 0;
     }
@@ -38,7 +32,7 @@
     &:after {
       border-color: $color-white transparent transparent transparent;
       top: ($line-width * 2) * -1;
-      left: calc(50% + #{$line-width});
+      left: calc(#{$arrow-left-offset} + #{$line-width});
       border-width: $arrow-size-inner $arrow-size-inner 0 0;
     }
   }
