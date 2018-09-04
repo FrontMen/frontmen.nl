@@ -5,15 +5,25 @@
 .o-wrapper, .o-wrapper-content {
   @include clearfix();
   position: relative;
-  padding-right: $global-spacing-unit;
-  padding-left: $global-spacing-unit;
+  padding-right: $global-spacing-unit-small;
+  padding-left: $global-spacing-unit-small;
   margin-right: auto;
   margin-left: auto;
 }
 .o-wrapper {
   max-width: $global-max-width;
+
+  @include mq($from: small) {
+    padding-right: $global-spacing-unit;
+    padding-left: $global-spacing-unit;
+  }
 }
 
 .o-wrapper-content {
   max-width: $global-max-width-content;
+
+  @include mq($from: small) {
+    padding-right: $global-spacing-unit-large;
+    padding-left: $global-spacing-unit-large;
+  }
 }

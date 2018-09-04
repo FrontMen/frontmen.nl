@@ -1,5 +1,6 @@
 .c-blockquote {
   color: $color-brand-primary;
+  padding-top: 1.5rem;
 
   &__content {
     @include font-size($font-size-h2);
