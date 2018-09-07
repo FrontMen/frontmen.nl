@@ -59,12 +59,22 @@ title: Styleguide
     <%- include('_components/badge', { type: "project", name: project }) %>
     <% }); %>
     </div>
+    <h3>Social</h3>
+    <% var socials = ['medium', 'linkedin', 'meetup', 'twitter']; %>
+    <div class="c-badge-bar">
+    <% socials.forEach(function(social){ %>
+    <%- include('_components/badge', { type: "social", name: social, size: 64}) %>
+    <% }); %>
+    </div>
 
     <h3>Sizes</h3>
+    <p>Size 64 can only be used by social badges</p>
     <div class="c-badge-bar">
     <%- include('_components/badge', { type: "tech", name: "angular" }) %>
     <%- include('_components/badge', { type: "tech", name: "angular", size: 150 }) %>
     <%- include('_components/badge', { type: "tech", name: "angular", size: 100 }) %>
+    
+    <%- include('_components/badge', { type: "social", name: "meetup", size: 64 }) %>
     </div>
 </div>
 

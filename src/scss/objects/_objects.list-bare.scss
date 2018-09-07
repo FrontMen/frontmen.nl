@@ -13,8 +13,14 @@
 .o-list-bare {
   list-style: none;
   margin-left: 0;
-}
-
-  .o-list-bare__item {
+  &__item {
     margin-left: 0;
+    &--secondary-bullet {
+      background-image: url(#{$baseURL}/img/asterisk.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 16px;
+      padding-left: $global-spacing-unit;
+    }
   }
+}

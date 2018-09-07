@@ -29,7 +29,7 @@
   justify-content: center;
   margin: $global-spacing-unit-small;
 
-  $badge-sizes: 150 18px, 100 16px;
+  $badge-sizes: 150 18px, 100 16px, 64 12px;
   @each $diamond-size, $font-size in $badge-sizes {
     &--#{$diamond-size} {
       @include fmDiamondSize($diamond-size);
@@ -48,6 +48,7 @@
     color: $color-white;
     text-transform: uppercase;
   }
+  
 
   &--project {
     .c-badge__logo {
@@ -56,10 +57,17 @@
       margin: 0;
     }
   }
+  
+  &--social {
+    .c-badge__logo {
+      margin-bottom: 0;
+    }
+  }
 
   &--ah       { @include fmDiamond(#201E33); }
-  &--klm      { @include fmDiamond(#00E6BF); }
-  &--quby     { @include fmDiamond(#FF5900); }
-  &--rabobank { @include fmDiamond(#FF5900); }
-  &--tele2    { @include fmDiamond(#00E6BF); }
+  &--klm      { @include fmDiamond($color-badge-brand-secondary); }
+  &--quby     { @include fmDiamond($color-badge-brand); }
+  &--rabobank { @include fmDiamond($color-badge-brand); }
+  &--tele2    { @include fmDiamond($color-badge-brand-secondary); }
+  &--social   { @include fmDiamond($color-badge-brand-secondary); }
 }

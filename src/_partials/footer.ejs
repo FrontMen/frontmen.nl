@@ -12,10 +12,22 @@
                     <a href="<%= site.baseURL %>/">Home</a>
                 </li>
                 <li class="o-list-bare__item">
-                    <a href="<%= site.baseURL %>/">Frontend first</a>
+                    Work
+                </li>
+                <li class="o-list-bare__item--secondary-bullet">
+                    <a href="<%= site.baseURL %>/">Quby</a>
+                </li>
+                <li class="o-list-bare__item--secondary-bullet">
+                    <a href="<%= site.baseURL %>/">Tele2</a>
+                </li>
+                <li class="o-list-bare__item--secondary-bullet">
+                    <a href="<%= site.baseURL %>/">KLM</a>
                 </li>
                 <li class="o-list-bare__item">
-                    <a href="<%= site.baseURL %>/">how we work</a>
+                    <a href="<%= site.baseURL %>/">About us</a>
+                </li>
+                <li class="o-list-bare__item">
+                    <a href="<%= site.baseURL %>/">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -39,28 +51,28 @@
             </div>
             <div class="c-social">
                 <div class="o-media c-social__link">
-                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <%- include('../_components/badge', { type: "social", name: "medium", size: 64, className: "o-media__badge"}) %>
                     <div class="o-media__content">
                         <p>We write at</p>
                         <a href="https://www.medium.com/frontmen"><strong>Medium</strong></a>
                     </div>
                 </div>
                 <div class="o-media c-social__link">
-                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <%- include('../_components/badge', { type: "social", name: "meetup", size: 64}) %>
                     <div class="o-media__content">
                         <p>We meet at</p>
                         <a href="https://www.meetup.com/FrontMania/"><strong>MeetUp</strong></a>
                     </div>
                 </div>
                 <div class="o-media c-social__link">
-                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <%- include('../_components/badge', { type: "social", name: "linkedin", size: 64}) %>
                     <div class="o-media__content">
                         <p>We work at</p>
                         <a href="https://www.linkedin.com/company/frontmen---expert-frontend-coding/"><strong>LinkedIn</strong></a>
                     </div>
                 </div>
                 <div class="o-media c-social__link">
-                    <img src="<%= site.baseURL %>/img/badge-medium.svg" class="o-media__img" alt="">
+                    <%- include('../_components/badge', { type: "social", name: "twitter", size: 64}) %>
                     <div class="o-media__content">
                         <p>We converse at</p>
                         <a href="https://twitter.com/frontmenhq"><strong>Twitter</strong></a>

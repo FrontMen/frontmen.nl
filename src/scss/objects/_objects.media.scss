@@ -8,9 +8,8 @@
   max-width: 20rem;
   min-width: 12rem;
   padding: 0 rem($global-spacing-unit) rem($global-spacing-unit) 0;
-  &__img {
-    width: 64px; //magic number
-    margin: 0 rem(40px) 0 0;
+  &__badge {
+    margin: 0 rem($global-spacing-unit) 0 0;
   }
   &__content {
     flex: 1;
