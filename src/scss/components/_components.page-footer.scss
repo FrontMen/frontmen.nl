@@ -33,6 +33,15 @@
     @include font-weight(bold);
     @include font-size($font-size-h4);
   }
+    
+  &__list {
+    li {
+      margin-bottom: $global-spacing-unit-small;
+    }
+    a {
+      @include font-weight(normal);
+    }
+  }
 
   &__logo {
     font-size: 0;
