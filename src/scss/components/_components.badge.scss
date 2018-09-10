@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   margin: $global-spacing-unit-small;
-
+  
   $badge-sizes: 150 18px, 100 16px, 64 12px;
   @each $diamond-size, $font-size in $badge-sizes {
     &--#{$diamond-size} {
