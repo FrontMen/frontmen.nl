@@ -1,0 +1,20 @@
+.c-address {
+
+  &__name {
+    @include font-size($font-size-h4);
+    color: $color-brand-primary;
+  }
+
+  &__street,
+  &__region,
+  &__phone,
+  &__mail {
+    display: block;
+  }
+
+
+  &__street {}
+  &__region {}
+  &__phone {}
+  &__mail {}
+}

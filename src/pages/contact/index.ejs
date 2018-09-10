@@ -1,12 +1,58 @@
 ---
 title: Contact
 ---
-<div class="o-wrapper">
-    <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis distinctio ea esse expedita fuga fugiat magni nihil nostrum omnis possimus provident qui repellendus reprehenderit sapiente similique tenetur vel, velit?</p>
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">You can always mail us or give us a call...</h1>
+    <p class="c-page-intro__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum ut nibh ut iaculis. Aliquam lobortis posuere lorem. Vestibulum dignissim suscipit mi, at maximus est tristique et. Nulla sit amet lectus elit. Curabitur venenatis nisi ac eleifend dignissim. Vestibulum imperdiet bibendum lacinia. </p>
+</div>
+
+<%- include('./_components/featured', {
+    title: "Ons hoofdkantoor in Utrecht",
+    image: "office.png"
+}) %>
+
+<div class="o-wrapper-content u-mb-huge">
+
+    <h2>Je kunt ons vinden in Amsterdam, Utrecht en Eindhoven</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus laborum rerum! Aperiam, error ex neque nesciunt odit omnis temporibus. A ab autem ducimus eos laudantium officia quis quisquam, voluptatum.</p>
+
+    <div class="o-flex-two-column">
+        <div class="o-flex-two-column__item">
+            <div class="c-address">
+                <h3 class="c-address__name">Locatie Utrecht</h3>
+                <span class="c-address__street">Tractieweg 41 (Studio B)</span>
+                <span class="c-address__region">3534 AP Utrecht</span>
+                <a class="c-address__phone" href="tel:0302658108">030 - 26 58 108</a>
+                <a class="c-address__mail" href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+            </div>
+        </div>
+        <div class="o-flex-two-column__item">
+            <div class="c-address">
+                <h3 class="c-address__name">Locatie Amsterdam</h3>
+                <span class="c-address__street">Tractieweg 41 (Studio B)</span>
+                <span class="c-address__region">3534 AP Utrecht</span>
+                <a class="c-address__phone" href="tel:0302658108">030 - 26 58 108</a>
+                <a class="c-address__mail" href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+            </div>
+        </div>
+        <div class="o-flex-two-column__item">
+            <div class="c-address">
+                <h3 class="c-address__name">Locatie Eindhoven</h3>
+                <span class="c-address__street">Tractieweg 41 (Studio B)</span>
+                <span class="c-address__region">3534 AP Utrecht</span>
+                <a class="c-address__phone" href="tel:0302658108">030 - 26 58 108</a>
+                <a class="c-address__mail" href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="o-wrapper u-mb-huge">
+
+<%- include('./_components/image', {
+    title: "some title here",
+    image: "welcome.jpg"
+}) %>
+
 </div>

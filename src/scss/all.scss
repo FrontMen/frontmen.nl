@@ -19,6 +19,7 @@
 @import "objects/objects.media";
 @import "objects/objects.flex-two-column";
 
+@import "components/components.address";
 @import "components/components.badge";
 @import "components/components.blockquote";
 @import "components/components.btn";
@@ -42,4 +43,5 @@
 
 @import "utilities/utilities.a11y";
 @import "utilities/utilities.headings";
+@import "utilities/utilities.spacings";
 @import "utilities/utilities.widths";
