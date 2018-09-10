@@ -1,0 +1,37 @@
+.c-contact-section {
+  background: $color-contact-section;
+  padding: $global-spacing-unit-large 0;
+
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__title {
+    @include font-size($global-font-size);
+    @include font-weight(bold);
+    margin-bottom: $global-spacing-unit;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    font-style: normal;
+
+    > * {
+      display: block;
+    }
+
+    em {
+      font-style: normal;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    order: -1;
+    margin-right: $global-spacing-unit;
+  }
+}
