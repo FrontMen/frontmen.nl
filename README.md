@@ -17,4 +17,4 @@ Runs local server with watchers for development.
 ## Publish
 Generates the entire site and commits it to the gh-pages branch.
 
-`npm run build`
+`npm run publish`
