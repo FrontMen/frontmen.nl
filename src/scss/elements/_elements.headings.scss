@@ -23,15 +23,30 @@ h6 {
 }
 
 h1 {
-  @include font-size($font-size-h1);
+  @include font-size($font-size-h4);
+  @include font-weight(bold);
+
+  @include mq($from: small) { @include font-size($font-size-h3); }
+  @include mq($from: medium) { @include font-size($font-size-h2); }
+  @include mq($from: large) { @include font-size($font-size-h1); }
 }
 
 h2 {
-  @include font-size($font-size-h2);
+  @include font-size($font-size-h5);
+  @include font-weight(bold);
+
+  @include mq($from: small) { @include font-size($font-size-h4); }
+  @include mq($from: medium) { @include font-size($font-size-h3); @include font-weight(normal); }
+  @include mq($from: large) { @include font-size($font-size-h2); }
 }
 
 h3 {
-  @include font-size($font-size-h3);
+  @include font-size($font-size-h6);
+  @include font-weight(bold);
+
+  @include mq($from: small) { @include font-size($font-size-h5); }
+  @include mq($from: medium) { @include font-size($font-size-h4); @include font-weight(normal); }
+  @include mq($from: large) { @include font-size($font-size-h3); }
 }
 
 h4 {
