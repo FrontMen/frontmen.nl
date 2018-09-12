@@ -8,14 +8,6 @@
     padding: $global-spacing-unit-small;
   }
 
-  @include mq($from: small) {
-    padding: $global-spacing-unit;
-  }
-
-  &__toggle {
-
-  }
-
   &__title {
     @include font-family(accent);
     @include font-size($font-size-h3);

@@ -47,7 +47,7 @@
 
   &__excerpt {
     flex: 1;
-    @include font-size($font-size-h3);
+    @include font-size($font-size-h4, 2);
   }
 
   &__button {

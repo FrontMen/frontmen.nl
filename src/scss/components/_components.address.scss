@@ -1,4 +1,12 @@
+.c-address__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .c-address {
+  flex: 1;
+  flex-basis: 33.33%;
 
   &__name {
     @include font-size($font-size-h4);
@@ -11,7 +19,6 @@
   &__mail {
     display: block;
   }
-
 
   &__street {}
   &__region {}

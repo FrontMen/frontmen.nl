@@ -2,7 +2,7 @@
 title: Tele2
 layout: work
 page_title: How we got Tele2 to use scrum and developed an innovative app using an Al-chatbot.
-excerpt: Tele2 goes to great lengths to offer their subscribers the very best customer experience. Part of this experience is a great working MyTele2 app. With the help of 800 customers (and an enthusiastic FrontMen team the existing app was radically transformed, killing two (challenging) birds with one stone in the process.
+excerpt: Tele2 goes to great lengths to offer their subscribers the very best customer experience. Part of this experience is a great working MyTele2 app. With the help of 800 customers (and an enthusiastic Frontmen team the existing app was radically transformed, killing two (challenging) birds with one stone in the process.
 featured: tele2.png
 featured_title: Image caption here...
 ---

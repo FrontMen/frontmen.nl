@@ -2,6 +2,10 @@
   #SPACINGS
 \*------------------------------------*/
 
+.u-mb-none {
+  margin-bottom: 0;
+}
+
 .u-mb-tiny {
   margin-bottom: $global-spacing-unit-tiny;
 }
