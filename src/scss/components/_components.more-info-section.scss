@@ -1,7 +1,6 @@
 .c-more-info-section {
   background: $color-contact-section;
-  padding: $global-spacing-unit-large 0;
-
+  padding: ($global-spacing-unit-huge * 2) 0 $global-spacing-unit-large 0;
 
   &__content {
     display: flex;

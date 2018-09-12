@@ -13,20 +13,31 @@
 }
 
 .c-badge-bar {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  margin-bottom: -10%;
 }
 
 .c-badge {
   @include fmDiamond($color-badge);
-  @include fmDiamondSize(200);
-  @include font-size($font-size-h4);
+  @include fmDiamondSize(100);
+  @include font-size($font-size-h6);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include mq($from: tiny) {
+    @include fmDiamondSize(150);
+    @include font-size($font-size-h5);
+  }
+
+  @include mq($from: small) {
+    @include fmDiamondSize(200);
+    @include font-size($font-size-h4);
+  }
 
   $badge-sizes: 150 18px, 100 16px, 64 12px;
   @each $diamond-size, $font-size in $badge-sizes {
