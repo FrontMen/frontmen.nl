@@ -1,4 +1,4 @@
-.c-contact-section {
+.c-more-info-section {
   background: $color-contact-section;
   padding: $global-spacing-unit-large 0;
 
@@ -11,6 +11,7 @@
   }
 
   &__title {
+    display: block;
     @include font-size($global-font-size);
     margin-bottom: $global-spacing-unit;
     text-transform: uppercase;
@@ -19,6 +20,7 @@
   &__author {
     @include font-size($global-font-size, 2);
     font-style: normal;
+    margin-right: $global-spacing-unit-large;
 
     > * {
       display: block;
@@ -33,5 +35,13 @@
     order: -1;
     margin-right: $global-spacing-unit-large;
     width: 200px;
+  }
+
+  &__tags {
+
+  }
+
+  &__tag {
+
   }
 }

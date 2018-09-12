@@ -1,0 +1,19 @@
+<aside role="contentinfo" class="c-more-info-section">
+    <div class="o-wrapper">
+        <div class="c-more-info-section__content">
+            <address class="c-more-info-section__author">
+                <strong class="c-more-info-section__title">Want to know more?</strong>
+                <em>Call or mail us!</em>
+                <a href="tel:0302658108">030 - 26 58 108</a>
+                <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
+            </address>
+            <img class="c-more-info-section__avatar" src="<%= site.baseURL %>/img/frontdesk-avatar.png" alt="Contact Remco for" />
+            <div class="c-more-info-section__tags">
+                <strong class="c-more-info-section__title">Tags</strong>
+                <% for(var i=0; i < page.tags.length; i++) { %>
+                    <div class="c-more-info-section__tag"><%= page.tags[i] %></div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</aside>
