@@ -17,6 +17,7 @@
   }
 
   &__author {
+    @include font-size($global-font-size, 2);
     font-style: normal;
 
     > * {
@@ -29,8 +30,8 @@
   }
 
   &__avatar {
-    border-radius: 50%;
     order: -1;
-    margin-right: $global-spacing-unit;
+    margin-right: $global-spacing-unit-large;
+    width: 200px;
   }
 }

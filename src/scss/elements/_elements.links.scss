@@ -8,7 +8,6 @@
 
 a {
   color: $color-links;
-  @include font-weight(bold);
   text-decoration: none;
 
   @include hocus() {
