@@ -10,7 +10,7 @@
 
     <main class="o-layout__main c-page-main" role="main">
         <article>
-            <div class="o-wrapper c-page-intro">
+            <div class="o-wrapper-content c-page-intro">
                 <h1 class="c-page-intro__title"><%= page.page_title %></h1>
                 <p class="c-page-intro__excerpt"><%= page.excerpt %></p>
             </div>
@@ -20,7 +20,7 @@
                 image: page.featured
             }) %>
 
-            <div class="o-wrapper"><%- body %></div>
+            <div class="o-wrapper-content u-mb-huge"><%- body %></div>
 
             <%- include('_partials/contact') %>
         </article>
