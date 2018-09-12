@@ -1,7 +1,10 @@
 .c-masthead {
   position: relative;
-  margin-bottom: ($global-spacing-unit-huge * 4);
-  padding-top: ($global-spacing-unit-huge * 2);
+  padding-top: $global-spacing-unit;
+
+  @include mq($from: tiny) { padding-top: $global-spacing-unit-large; }
+  @include mq($from: small) { padding-top: $global-spacing-unit-huge; }
+  @include mq($from: medium) { padding-top: ($global-spacing-unit-huge * 2); }
 
   &:before, &:after {
     content: '';
@@ -13,32 +16,46 @@
   }
 
   &:before {
-    width: 50%;
-    height: 200vh;
-    top: -200px;
+    width: 60%;
+    height: 300vh;
+    top: 0;
     left: 0;
     background-image: url('#{$baseURL}/img/shape-1.svg');
+
+    @include mq($from: small) { width: 55%; top: -100px; }
+    @include mq($from: medium) { width: 50%; top: -200px; }
   }
 
   &:after {
-    width: 30%;
+    width: 75%;
     height: 200vh;
-    top: 40%;
+    top: 65%;
     right: 0;
     background-image: url('#{$baseURL}/img/shape-2.svg');
+
+    @include mq($from: small) { width: 40%; top: 50%; }
+    @include mq($from: medium) { width: 30%; top: 40%; }
   }
 
   &__title {
-    @include font-size($font-size-h1 * 1.5, 1.5);
+    @include font-size($font-size-h2, 1.5);
     @include font-weight(bold);
 
+    @include mq($from: small) { @include font-size($font-size-h1); }
+    @include mq($from: medium) { @include font-size($font-size-h1 * 1.5); }
+
     &-sub {
-      @include font-size($font-size-h2);
+      @include font-size($font-size-h4);
       @include font-weight(normal);
 
       color: $color-brand-primary;
       text-transform: uppercase;
-      display: inline;
+      display: block;
+      margin-top: $global-spacing-unit-small;
+
+      @include mq($from: small) { @include font-size($font-size-h3); }
+      @include mq($from: medium) { @include font-size($font-size-h2); }
+      @include mq($from: medium) { display: inline; margin-top: 0; }
     }
   }
 
@@ -46,38 +63,64 @@
     position: relative;
     margin-top: $global-spacing-unit-huge;
     margin-bottom: $global-spacing-unit-huge;
-    height: ($global-spacing-unit-huge * 4);
+    height: 1250px;
+
+    @include mq($from: small) { height: 750px; }
+    @include mq($from: medium) { height: 600px; }
 
     .c-badge {
       position: absolute;
     }
 
+    // QUBY
     .c-badge:nth-child(1) {
-      left: 0;
+      left: 10%;
       top: 0;
       transform: scale(1.2);
+
+      @include mq($from: small) { left: 5%; }
+      @include mq($from: medium) { left: 0; }
     }
 
+    // RABOBANK
     .c-badge:nth-child(2) {
-      left: 45%;
-      top: 0;
+      left: -50px;
+      top: 30%;
       transform: scale(1.2);
+
+      @include mq($from: small) { left: 45%; top: -5%; }
+      @include mq($from: medium) { left: 45%; top: 0; }
     }
 
+    // FRONTMANIA
     .c-badge:nth-child(3) {
-      left: 25%;
-      top: 60%;
+      left: 65%;
+      top: 35%;
       transform: scale(1.5);
+
+      @include mq($from: small) { left: 75%; top: 25%; }
+      @include mq($from: medium) { left: 25%; top: 45%; }
     }
 
+    // FRONTMEN
     .c-badge:nth-child(4) {
-      right: 0;
+      right: calc(50% - 100px);
+      top: 65%;
       transform: scale(1.75);
+
+      @include mq($from: small) { }
+      @include mq($from: medium) { right: 0; top: auto; }
     }
+
+    // TELE2
     .c-badge:nth-child(5) {
-      top: -130%;
+      top: -10%;
       right: -10%;
       transform: scale(1.2);
+
+      @include mq($from: small) { top: -40%; }
+      @include mq($from: medium) { top: -75%; right: 0; }
+      @include mq($from: large) { top: -90%; right: -20%; }
     }
   }
 }

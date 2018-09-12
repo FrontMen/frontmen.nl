@@ -12,33 +12,14 @@
   height: #{$diamond-height / $ratio}px;
 }
 
-.c-badge-bar {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-bottom: -10%;
-  margin-top: $global-spacing-unit-large;
-}
-
 .c-badge {
   @include fmDiamond($color-badge);
-  @include fmDiamondSize(100);
+  @include fmDiamondSize(200);
   @include font-size($font-size-h6);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @include mq($from: tiny) {
-    @include fmDiamondSize(150);
-    @include font-size($font-size-h5);
-  }
-
-  @include mq($from: small) {
-    @include fmDiamondSize(200);
-    @include font-size($font-size-h4);
-  }
 
   $badge-sizes: 150 18px, 100 16px, 64 12px;
   @each $diamond-size, $font-size in $badge-sizes {
@@ -90,5 +71,24 @@
   }
   &--frontmania {
     background: none;
+  }
+}
+
+.c-badge-bar {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: -50px;
+  margin-top: $global-spacing-unit-large;
+
+  @include mq($from: tiny) { margin-bottom: -75px; }
+  @include mq($from: small) { margin-bottom: -100px; }
+
+  .c-badge {
+    @include fmDiamondSize(100);
+
+    @include mq($from: tiny) { @include fmDiamondSize(150); @include font-size($font-size-h5); }
+    @include mq($from: small) { @include fmDiamondSize(200); @include font-size($font-size-h4); }
   }
 }
