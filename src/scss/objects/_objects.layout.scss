@@ -32,6 +32,7 @@ $layout-navigation-width: 400px;
     width: $layout-navigation-width;
     transform: translateX($layout-navigation-width * -1);
     transition: transform .3s ease-in-out;
+    z-index: 2;
   }
 
   &__main {
