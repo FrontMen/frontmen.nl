@@ -9,5 +9,6 @@
 
   &__excerpt {
     @include font-size($font-size-h3);
+    margin-bottom: 0;
   }
 }
