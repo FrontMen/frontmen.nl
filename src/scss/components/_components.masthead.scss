@@ -114,13 +114,13 @@
 
     // TELE2
     .c-badge:nth-child(5) {
-      top: -10%;
+      top: -5%;
       right: -10%;
       transform: scale(1.2);
 
       @include mq($from: small) { top: -40%; }
       @include mq($from: medium) { top: -75%; right: 0; }
-      @include mq($from: large) { top: -90%; right: -20%; }
+      @include mq($from: large) { top: -100%; right: -10%; }
     }
   }
 }
