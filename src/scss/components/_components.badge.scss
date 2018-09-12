@@ -75,10 +75,20 @@
     }
   }
 
-  &--ah       { @include fmDiamond(#201E33); }
+  &--ah       { @include fmDiamond($color-badge-brand-tertiary); }
   &--klm      { @include fmDiamond($color-badge-brand-secondary); }
   &--quby     { @include fmDiamond($color-badge-brand); }
   &--rabobank { @include fmDiamond($color-badge-brand); }
   &--tele2    { @include fmDiamond($color-badge-brand-secondary); }
   &--social   { @include fmDiamond($color-badge-brand-secondary); }
+
+  &--frontmen {
+    @include fmDiamond($color-badge-brand-tertiary);
+    .c-badge__logo {
+      max-width: 70%;
+    }
+  }
+  &--frontmania {
+    background: none;
+  }
 }

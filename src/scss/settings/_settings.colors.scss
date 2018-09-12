@@ -6,6 +6,11 @@
 // location.
 
 // Colour palette.
+$color-blue-dark: #1f1e32 !default;
+$color-grey: #a5a5ad !default;
+$color-grey-dark: #797884 !default;
+$color-grey-light: #e6e6e6 !default;
+$color-white: #fff !default;
 
 $color-brand-primary: #ef642b !default;
 $color-brand-primary-highlight: lighten($color-brand-primary, 5%) !default;
@@ -15,11 +20,7 @@ $color-brand-secondary: #57c9ca !default;
 $color-brand-secondary-highlight: lighten($color-brand-secondary, 5%) !default;
 $color-brand-secondary-shadow: darken($color-brand-secondary, 5%) !default;
 
-$color-blue-dark: #1f1e32 !default;
-$color-grey: #a5a5ad !default;
-$color-grey-dark: #797884 !default;
-$color-grey-light: #e6e6e6 !default;
-$color-white: #fff !default;
+$color-brand-tertiary: $color-blue-dark !default;
 
 // Reassign literal variables to meaningful ones.
 $color-page-text: $color-blue-dark;
@@ -45,6 +46,7 @@ $color-contact-section: $color-grey-light;
 $color-badge: #95949d;
 $color-badge-brand: $color-brand-primary;
 $color-badge-brand-secondary: $color-brand-secondary;
+$color-badge-brand-tertiary: $color-brand-tertiary;
 
 $color-page-footer: $color-white;
 $color-page-footer-background: $color-blue-dark;

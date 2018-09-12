@@ -7,9 +7,23 @@ keywords:
 - foobar
 ---
 <div class="c-masthead">
-    <div class="o-headline  c-masthead__text">
-        <h1 class="o-headline__main  c-masthead__title">Boost your business with cutting-edge app technology.</h1>
-        <h2 class="o-headline__sub  c-masthead__sub">Frontmen helpt grote merken en bedrijven sneller en beter te innoveren, met state-of-the-art (web)applicaties.</h2>
+    <div class="o-wrapper-content">
+        <h1 class="c-masthead__title">
+            Boost your business with cutting-edge app technology
+            <span class="c-masthead__title-sub">Frontend experts</span>
+        </h1>
+    </div>
+    <% var projects = ['quby', 'rabobank','frontmania', 'frontmen', 'tele2']; %>
+    <div class="o-wrapper c-masthead__badges">
+        <% projects.forEach(function(project){ %>
+            <%if (project === "frontmania") { %>
+                <img class="c-badge c-badge--frontmania" src="<%= site.baseURL %>/img/badges-project/frontmania.png" />
+            <% }%>
+            <%if (project !== "frontmania") { %>
+              <%- include('_components/badge', { type: "project", name: project }) %>
+            <% }%>
+
+        <% }); %>
     </div>
 </div>
 

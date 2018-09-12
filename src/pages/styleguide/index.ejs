@@ -46,22 +46,22 @@ title: Styleguide
 
     <h3>Tech</h3>
     <% var techs = ['angular', 'backbone', 'css', 'ember', 'html', 'javascript', 'jest', 'polymer', 'react', 'redux', 'redux-saga']; %>
-    <div class="c-badge-bar">
+    <div class="c-badge-bar u-mb-huge">
     <% techs.forEach(function(tech){ %>
     <%- include('_components/badge', { type: "tech", name: tech }) %>
     <% }); %>
     </div>
 
     <h3>Projects</h3>
-    <% var projects = ['ah', 'klm', 'rabobank', 'tele2', 'quby']; %>
-    <div class="c-badge-bar">
+    <% var projects = ['ah', 'klm', 'rabobank', 'tele2', 'quby', 'frontmen']; %>
+    <div class="c-badge-bar u-mb-huge">
     <% projects.forEach(function(project){ %>
     <%- include('_components/badge', { type: "project", name: project }) %>
     <% }); %>
     </div>
     <h3>Social</h3>
     <% var socials = ['medium', 'linkedin', 'meetup', 'twitter']; %>
-    <div class="c-badge-bar">
+    <div class="c-badge-bar u-mb-huge">
     <% socials.forEach(function(social){ %>
     <%- include('_components/badge', { type: "social", name: social, size: 64}) %>
     <% }); %>
@@ -69,11 +69,11 @@ title: Styleguide
 
     <h3>Sizes</h3>
     <p>Size 64 can only be used by social badges</p>
-    <div class="c-badge-bar">
+    <div class="c-badge-bar u-mb-huge">
     <%- include('_components/badge', { type: "tech", name: "angular" }) %>
     <%- include('_components/badge', { type: "tech", name: "angular", size: 150 }) %>
     <%- include('_components/badge', { type: "tech", name: "angular", size: 100 }) %>
-    
+
     <%- include('_components/badge', { type: "social", name: "meetup", size: 64 }) %>
     </div>
 </div>

@@ -1,23 +1,85 @@
 .c-masthead {
   position: relative;
-  overflow: hidden;
-  height: 720px;
-  margin-bottom: $global-spacing-unit;
+  margin-bottom: ($global-spacing-unit-huge * 4);
+  padding-top: ($global-spacing-unit-huge * 2);
 
-  @include mq($from: large) {
-    padding-top: 0;
-  }
-  &__text {
-    padding: $global-spacing-unit;
-    // margin-left: $global-spacing-unit-huge;
-    // max-width: 760px;
+  &:before, &:after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    z-index: -1;
   }
 
-    &__title {
-      @include font-weight(bold);
-      @include font-size($font-size-h1);
+  &:before {
+    width: 50%;
+    height: 200vh;
+    top: -200px;
+    left: 0;
+    background-image: url('#{$baseURL}/img/shape-1.svg');
+  }
+
+  &:after {
+    width: 30%;
+    height: 200vh;
+    top: 40%;
+    right: 0;
+    background-image: url('#{$baseURL}/img/shape-2.svg');
+  }
+
+  &__title {
+    @include font-size($font-size-h1 * 1.5, 1.5);
+    @include font-weight(bold);
+
+    &-sub {
+      @include font-size($font-size-h2);
+      @include font-weight(normal);
+
+      color: $color-brand-primary;
+      text-transform: uppercase;
+      display: inline;
+    }
+  }
+
+  &__badges {
+    position: relative;
+    margin-top: $global-spacing-unit-huge;
+    margin-bottom: $global-spacing-unit-huge;
+    height: ($global-spacing-unit-huge * 4);
+
+    .c-badge {
+      position: absolute;
     }
 
+    .c-badge:nth-child(1) {
+      left: 0;
+      top: 0;
+      transform: scale(1.2);
+    }
+
+    .c-badge:nth-child(2) {
+      left: 45%;
+      top: 0;
+      transform: scale(1.2);
+    }
+
+    .c-badge:nth-child(3) {
+      left: 25%;
+      top: 60%;
+      transform: scale(1.5);
+    }
+
+    .c-badge:nth-child(4) {
+      right: 0;
+      transform: scale(1.75);
+    }
+    .c-badge:nth-child(5) {
+      top: -130%;
+      right: -10%;
+      transform: scale(1.2);
+    }
+  }
 }
 
 
