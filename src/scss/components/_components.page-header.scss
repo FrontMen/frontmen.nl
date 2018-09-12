@@ -4,18 +4,18 @@
   align-items: center;
   padding: $global-spacing-unit-tiny;
 
-  @include mq($from: tiny) {
-    padding: $global-spacing-unit-small;
-  }
+  @include mq($from: tiny) { padding: $global-spacing-unit-small; }
 
   &__title {
     @include font-family(accent);
-    @include font-size($font-size-h3);
+    @include font-size($font-size-h5);
     @include truncate();
     flex: 1;
     text-transform: uppercase;
     color: $color-page-head;
     margin: 0 0 0 $global-spacing-unit;
+
+    @include mq($from: small) { @include font-size($font-size-h3); }
 
     &-sub {
       color: $color-page-head-sub;
