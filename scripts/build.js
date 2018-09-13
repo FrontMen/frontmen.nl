@@ -5,6 +5,7 @@ import buildPages from './pages';
 import buildJavascript from './javascript';
 import buildStyle from './style';
 import buildAssets from './assets';
+import buildSitemap from './sitemap';
 
 const log = logger('build');
 const { outputPath } = config;
@@ -18,6 +19,7 @@ fse
   .then(() => buildJavascript(config))
   .then(() => buildStyle(config))
   .then(() => buildAssets(config))
+  .then(() => buildSitemap(config))
   .then(() => {
     log.success(`Site built done`);
   })
