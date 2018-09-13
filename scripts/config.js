@@ -5,7 +5,8 @@ const defaultConfig = {
   srcPath: './src',
   outputPath: './dist',
   port: 8000,
-  site: {}
+  site: {},
+  copyFiles: ['CNAME']
 };
 
 const siteConfig = yaml.safeLoad(fse.readFileSync('./config.yml', 'utf-8'));
