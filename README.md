@@ -1,6 +1,6 @@
 # Frontmen.nl
 [Work in progress]
-New version of frontmen.nl.
+New version of [frontmen.nl](https://www.frontmen.nl).
 
 https://frontmen.github.io/frontmen.nl/
 
