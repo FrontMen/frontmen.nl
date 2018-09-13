@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: $color-page-head-background;
   padding: $global-spacing-unit;
-  overflow: scroll;
+  overflow: auto;
 
   &__list {
     list-style: none;
