@@ -32,7 +32,7 @@ fse
       })
   )
   .then(() => {
-    log.success(`Publishing to: https://frontmen.github.io/frontmen.nl/`);
+    log.success(`Publishing to: https://www.frontmen.nl`);
   })
   .catch(err => {
     log.error(`Publish failed: ${err.message}`);

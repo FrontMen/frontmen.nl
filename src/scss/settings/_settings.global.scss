@@ -36,8 +36,8 @@ $global-spacing-unit-huge: round($global-spacing-unit * 3);
   @error "The value of `$global-spacing-unit` must not be changed.";
 }
 
-$baseURL: "";
+$baseURL: "https://www.frontmen.nl";
 
 @if (config(env) == prod) {
-  $baseURL: "https://frontmen.github.io/frontmen.nl";
+  $baseURL: "https://www.frontmen.nl";
 }
