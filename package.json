@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel-node scripts/build.js",
     "start": "babel-node scripts/serve.js",
-    "publish": "NODE_ENV=production npm run build && babel-node scripts/publish.js"
+    "publish": "NODE_ENV=production npm run build:production && babel-node scripts/publish.js",
+    "build:production": "NODE_ENV=production npm run build"
   },
   "author": "",
   "license": "ISC",
