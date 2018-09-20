@@ -1,4 +1,4 @@
-.c-ico {
+.c-icon {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -13,7 +13,7 @@
     }
   }
 
-  $icons: "menu-close" "menu-hamburger";
+  $icons: 'menu-close' 'menu-hamburger';
 
   @each $icon in $icons {
     &--#{$icon} {
