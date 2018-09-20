@@ -17,7 +17,7 @@ keywords:
     <div class="o-wrapper c-masthead__badges">
         <% projects.forEach(function(project){ %>
             <%if (project === "frontmania") { %>
-                <img class="c-badge c-badge--frontmania" src="<%= site.baseURL %>/img/badges-project/frontmania.png" />
+                <img alt="frontmania logo" class="c-badge c-badge--frontmania" src="<%= site.baseURL %>/img/badges-project/frontmania.png" />
             <% }%>
             <%if (project !== "frontmania") { %>
               <%- include('_components/badge', { type: "project", name: project }) %>
