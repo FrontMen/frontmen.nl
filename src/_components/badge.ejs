@@ -1,5 +1,5 @@
 <div class="c-badge c-badge--<%= type %> c-badge--<%= name %> <%= typeof size !== 'undefined' ? "c-badge--" + size : ""%>">
-    <img class="c-badge__logo" src="<%= site.baseURL %>/img/badges-<%= type %>/<%= name %>.svg" />
+    <img alt="<%= name %> logo" class="c-badge__logo" src="<%= site.baseURL %>/img/badges-<%= type %>/<%= name %>.svg" />
     <span class="c-badge__name <%= type === "project" || type === "social" ? "u-hidden-visually" : ""%>">
         <%= name.replace(/-/g, " ") %>
     </span>
