@@ -1,12 +1,12 @@
 const layout = document.querySelector('.o-layout');
 const toggleButton = document.querySelector('.js-menu-toggle');
-const toggleButtonIcon = toggleButton.querySelector('.c-ico');
+const toggleButtonIcon = toggleButton.querySelector('.c-icon');
 const navigationClass = '.o-layout__navigation';
 
 const toggleMenu = () => {
   layout.classList.toggle('o-layout--open');
-  toggleButtonIcon.classList.toggle('c-ico--menu-hamburger');
-  toggleButtonIcon.classList.toggle('c-ico--menu-close');
+  toggleButtonIcon.classList.toggle('c-icon--menu-hamburger');
+  toggleButtonIcon.classList.toggle('c-icon--menu-close');
 };
 
 const closeOnClickOutside = selector => {
