@@ -9,6 +9,9 @@
     "publish": "NODE_ENV=production npm run build:production && babel-node scripts/publish.js",
     "build:production": "NODE_ENV=production npm run build"
   },
+  "engines": {
+    "node": "carbon"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
