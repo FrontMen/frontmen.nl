@@ -39,5 +39,5 @@ $global-spacing-unit-huge: round($global-spacing-unit * 3);
 $baseURL: "http://localhost:8000";
 
 @if (config(env) == prod) {
-  $baseURL: "https://www.frontmen.nl";
+  $baseURL: "";
 }
