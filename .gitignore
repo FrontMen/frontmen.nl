@@ -10,3 +10,6 @@ node_modules
 
 # OS FILES
 .DS_Store
+
+#CI
+.gitignore.bak

@@ -16,6 +16,9 @@ before_install:
 - chmod 600 ~/.ssh/deploy_rsa
 - ssh-add ~/.ssh/deploy_rsa
 
+before_deploy:
+- sed -i.bak '/dist\//d' ./.gitignore
+
 deploy:
   - provider: script
     skip_cleanup: true
