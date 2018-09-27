@@ -24,8 +24,10 @@ fse
       new Promise((resolve, reject) => {
         ghPages.publish(outputPath, 
           {
-            name: 'codeship',
-            email: 'deploy@frontmen.nl',
+            user:{
+              name: 'codeship',
+              email: 'deploy@frontmen.nl'
+            },
             message: 'Auto-generated commit --skip-ci'
           }
         , err => {
