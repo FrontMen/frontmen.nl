@@ -25,5 +25,5 @@ Generates the entire site and commits it to the gh-pages branch.
 # Deploy hooks
 `master` branch deploys to production environment.
 
-`dev` branch deploys to staging environment
+`dev` branch deploys to staging environment (gh-pages branch)
 
