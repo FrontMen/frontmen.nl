@@ -22,7 +22,15 @@ fse
   .then(
     () =>
       new Promise((resolve, reject) => {
-        ghPages.publish(outputPath, {}, err => {
+        ghPages.publish(outputPath, 
+          {
+            user:{
+              name: 'codeship',
+              email: 'deploy@frontmen.nl'
+            },
+            message: 'Auto-generated commit --skip-ci'
+          }
+        , err => {
           if (err) {
             reject(new Error(err));
           } else {
@@ -32,7 +40,7 @@ fse
       })
   )
   .then(() => {
-    log.success(`Publishing to: https://www.frontmen.nl`);
+    log.success(`Publishing to: https://staging.frontmen.nl`);
   })
   .catch(err => {
     log.error(`Publish failed: ${err.message}`);
