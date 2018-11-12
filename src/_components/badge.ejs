@@ -1,5 +1,11 @@
 <div class="c-badge c-badge--<%= type %> c-badge--<%= name %> <%= typeof size !== 'undefined' ? "c-badge--" + size : ""%>">
+    <%if (typeof url !== 'undefined') { %>
+        <a href="<%= url %>" class="c-badge__link" target="_blank">
+    <% } %>
     <img alt="<%= name %> logo" class="c-badge__logo" src="<%= site.baseURL %>/img/badges-<%= type %>/<%= name %>.svg" />
+    <%if (typeof url !== 'undefined') { %>
+        </a>
+    <% } %>
     <span class="c-badge__name <%= type === "project" || type === "social" ? "u-hidden-visually" : ""%>">
         <%= name.replace(/-/g, " ") %>
     </span>
