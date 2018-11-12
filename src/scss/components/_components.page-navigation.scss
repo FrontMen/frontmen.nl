@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: $color-page-head-background;
-  padding: $global-spacing-unit;
+  padding: 0 $global-spacing-unit $global-spacing-unit $global-spacing-unit;
   overflow: auto;
 
   &__list {
@@ -17,15 +17,11 @@
   &__link {
     display: block;
     color: $color-menu-item;
-    padding: $global-spacing-unit $global-spacing-unit-small;
+    padding: $global-spacing-unit-small $global-spacing-unit-small;
     @include font-family(accent);
     @include font-size($font-size-h3);
     @include font-weight(normal);
     text-transform: uppercase;
-
-    &:first-child {
-      margin-top: $global-spacing-unit * -1;
-    }
 
     @at-root {
       a#{&} {
