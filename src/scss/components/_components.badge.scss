@@ -41,6 +41,10 @@
     width: 70%;
     height: auto;
     margin-bottom: $global-spacing-unit-tiny;
+
+    @include mq($until: small) {
+      margin-bottom: 0;
+    }
   }
 
   &__name {
@@ -63,12 +67,17 @@
     }
   }
 
-  &--ah       { @include fmDiamond($color-badge-brand-tertiary); }
-  &--klm      { @include fmDiamond($color-badge-brand-secondary); }
-  &--quby     { @include fmDiamond($color-badge-brand); }
-  &--rabobank { @include fmDiamond($color-badge-brand); }
-  &--tele2    { @include fmDiamond($color-badge-brand-secondary); }
-  &--social   { @include fmDiamond($color-badge-brand-secondary); }
+  &--ah         { @include fmDiamond($color-badge-brand-tertiary); }
+  &--klm        { @include fmDiamond($color-badge-brand-secondary); }
+  &--quby       { @include fmDiamond($color-badge-brand); }
+  &--rabobank   { @include fmDiamond($color-badge-brand); }
+  &--tele2      { @include fmDiamond($color-badge-brand-secondary); }
+  &--social     { @include fmDiamond($color-badge-brand-secondary); }
+
+  // Some texts don't fit on mobile
+  &--backbone   { .c-badge__name { @include mq($until: small) { font-size: 85%; } } }
+  &--javascript { .c-badge__name { @include mq($until: small) { font-size: 70%; } } }
+  &--redux-saga { .c-badge__name { @include mq($until: small) { font-size: 80%; } } }
 
   &--frontmen {
     @include fmDiamond($color-badge-brand-tertiary);
