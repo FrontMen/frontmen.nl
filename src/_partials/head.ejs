@@ -20,6 +20,15 @@
 
 <link rel="canonical" href="<%= site.baseURL %><%= page.url %>">
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134700059-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-134700059-1');
+</script>
+
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
 <link rel="stylesheet" href="<%= site.baseURL %>/css/main.css?<%= new Date().valueOf() %>">
 <!-- %%version%% -->
