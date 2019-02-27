@@ -46,9 +46,5 @@
     "sitemap-static": "^0.4.4",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
-  },
-  "devDependencies": {
-    "responsive-images-generator": "^0.2.2",
-    "sharp": "^0.21.3"
   }
 }
