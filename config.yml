@@ -8,4 +8,4 @@ keywords:
 - development
 description: Boost your business with cutting-edge app technology. We're frontend experts who innovate and deliver. We solve complex problems and deliver real impact.
 baseURL: "http://localhost:8000"
-image: 'img/favicon.png'
+image: 'img/logo.png'

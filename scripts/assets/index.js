@@ -6,6 +6,14 @@ import generateResponsive, { ILLUSTRATIONS_FORMATS } from './responsive';
 
 const log = logger('build:assets');
 
+const responsiveImages = (srcPath) => {
+  if(process.env.NODE_ENV === 'production') {
+    return Promise.resolve();
+  }
+  return glob.sync(`${srcPath}/**/*.@(${ILLUSTRATIONS_FORMATS})`)
+    .map(file => generateResponsive(file));
+};
+
 const build = (options = {}) => {
   log.info('Building assets...');
 
@@ -14,14 +22,11 @@ const build = (options = {}) => {
   const imgFiles = glob.sync(`**/*.@(${IMG_FORMATS})`, { cwd: srcPath });
   const fontFiles = glob.sync(`**/*.@(${FONT_FORMATS})`, { cwd: srcPath });
 
-  return Promise.all([
-    ...imgFiles.map(file => processImage(file, { srcPath, outputPath })),
-    ...fontFiles.map(file => processFont(file, { srcPath, outputPath }))
-  ])
+  return Promise.all([responsiveImages(srcPath)])
     .then(() => {
       return Promise.all([
-        glob.sync(`${outputPath}/**/*.@(${ILLUSTRATIONS_FORMATS})`)
-          .map(file => generateResponsive(file))
+        ...imgFiles.map(file => processImage(file, { srcPath, outputPath })),
+        ...fontFiles.map(file => processFont(file, { srcPath, outputPath }))
       ]);
     })
     .then(() => {
