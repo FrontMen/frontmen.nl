@@ -1,5 +1,5 @@
 import path from 'path';
-import { generateResponsiveImages } from 'responsive-images-generator/lib';
+import { generateResponsiveImages } from './responsive-images-generator';
 
 export const ILLUSTRATIONS_FORMATS = 'png|jpg|jpeg';
 
