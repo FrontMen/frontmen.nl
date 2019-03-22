@@ -1,0 +1,51 @@
+---
+title: Rabobank
+layout: work
+technologies:
+- html
+- css
+- javascript
+- angular
+tags:
+- frontend stack
+- ui components
+- framework upgrade
+---
+
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Upgrading the Rabobank frontend stack</h1>
+    <p class="c-page-intro__excerpt">Driven by the motto “write once, deploy anywhere”, Rabobank bet on web technology early on and started building its banking application on AngularJS around 2013. This AngularJS driven application is what powers the Rabobank banking environment on mobile and the desktop. The application has seen a lot of changes since then but the core technology and infrastructure that it was built on stayed the same over the years. This brought in several challenges. AngularJS was replaced by a newer variant, Angular. It got increasingly difficult to keep up with the technical and performance needs of the application as it scaled up, with the framework that was no longer actively developed. Also, having talented JavaScript developers onboard AngularJS projects became progressively challenging. Also with the end of life announced for AngularJS, the frontend team had to upgrade to a newer stack better suited to the more modern application and developer needs.</p>
+</div>
+
+<%- include('./_components/featured', {
+    title: "Rabobank office Utrecht",
+    image: "rabobank.jpg"
+}) %>
+
+<div class="o-wrapper-content">
+    <h2>Our challenge</h2>
+    <p>The AngularJS based Rabobank platform was mature, stable and used extensively. But for the reasons mentioned above, a migration to a newer tech stack was inevitable. However, there were many challenges.</p>
+    <ul>
+        <li>The application was a joint effort of 80+ teams. Migrating to a newer stack in one go was not an option. As that could potentially halt the development of new features for a long period of time. And the bank was not ready to take that risk.</li>
+        <li>The existing platform underwent a substantial amount of performance optimizations. It was blazingly fast. So the bars were high for the new platform. A non-big-bang migration would also mean that during the time of migration, both the old AngularJS and the new Angular frameworks would have to co-exist in the application. Adding to the performance challenge.</li>
+        <li>Simultaneously, the UX/UI of the application was undergoing big changes as well. With the new platform, our goal was not to spend too much time writing framework code and building blocks that were potentially already available on the open source community.</li>
+    </ul>
+
+    <h2>Our approach</h2>
+    <p>With a big bang migration not being an option to replace the existing stack, the team’s first step was to create a gradual migration path for all the 80+ teams to make the switch to the newer stack. To be able to do this, the team came up with the following strategy:</p>
+    <ol>
+        <li>First, replace the old shell of the application with a new shell built on Angular</li>
+        <li>Create a compatibility layer between the old and the new shell, that can seamlessly load the old pages within the new shell.</li>
+        <li>Create an infrastructure for the teams to easily migrate from the old stack to new stack.</li>
+        <li>Use the compatibility later in the new application to run pages built on both the old and the new stack.</li>
+    </ol>
+    <p>This would mean that once the compatibility layer is in place, the application would be able to run pages from the teams that are on either old stack or the new stack. The 80+ teams could migrate to the new stack concurrently or at their own pace. There would be no need for a big bang migration, nor feature development would need to be paused.</p>
+    <p>To address the performance challenges, the team decided to take an approach to do as much as possible during the time the application is staying idle and load only the bare minimum things necessary for the application at the moment. And load the rest later. Previously, the application would start with a login screen that was built with native technology. Once the user logged in, the web part would kick in. There was an idle time frame between when the login screen is presented to when the user would actually log in, that the team could leverage to preload the application and make it ready when the user is logged in. </p>
+    <p>To address the third challenge of not having to spend too much time writing framework code and creating components that are already available on the open source ecosystem, the team decided to go with Ionic. That is built on Angular and provides us with many built-in components. Any team migrating to the new stack could just use those components provided by Ionic to their benefits. Saving time and creating a standardization of components across teams automatically.</p>
+
+    <h2>Our product</h2>
+    <p>The development team created an application that runs on Angular and Ionic. This application is able to run the pages built on the old stack seamlessly. The team is currently busy creating infrastructure for teams to easily migrate to the new stack. And the first teams have already started the migration. This new setup has already been deployed to production and has been received very well. The team managed to not only match the performance of the previous stack but actually surpass those expectations. The team built the new application as a static application that is loaded on the background as the user is busy logging in. So when the user logs in, the application is ready to go instantly. This has been received very positively by the users of the application. </p>
+
+    <h2>The result</h2>
+    <p>This new setup is now deployed to production and is being used by over 2 million customers in the Netherlands. The team has created foundations for the next version of the Rabobank frontend platform and in a near future, as more and more teams switch their pages to the new stack, the frontend platform of Rabobank will be completely driven by the modern Angular/Ionic setup. The application performs better than the previous setup and never during the migration lost its motto of “write once, run anywhere”.</p>
+</div>

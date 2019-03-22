@@ -1,0 +1,41 @@
+---
+title: Work
+keywords:
+- work
+- projects
+- air france klm
+- jumbo
+- kramp
+- quby
+- rabobank
+- shell
+- tele2
+---
+
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">We get your apps out there. Faster and better</h1>
+    <p class="c-page-intro__excerpt">Frontmen was established in 2012. It has since grown to a company of almost 100 enthusiastic developers and architects.
+        Professionals working in small teams at (and with) our clients to create the best frontend applications based
+        on the latest JavaScript standards. With us, the app in itself is never the end goal. We deliver something that
+        lasts longer: the power and the tools to innovate faster and better in the future.</p>
+</div>
+
+<% var projects = [
+    { url: 'air-france-klm', title: 'Air France KLM' },
+    { url: 'jumbo', title: 'Jumbo' },
+    { url: 'kramp', title: 'Kramp' },
+    { url: 'quby', title: 'Quby' },
+    { url: 'rabobank', title: 'Rabobank' },
+    { url: 'shell-tapup', title: 'Shell Tapup' },
+    { url: 'tele2', title: 'Tele2' }
+];
+%>
+<div class="o-wrapper-content">
+    <ul>
+        <% projects.forEach(function(project){ %>
+            <li>
+                <a href="<%= site.baseURL %>/work/<%= project.url %>"><%= project.title %></a>
+            </li>
+        <% }); %>
+    </ul>
+</div>

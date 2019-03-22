@@ -1,0 +1,41 @@
+---
+title: Shell Tapup
+layout: work
+technologies:
+- react
+- redux
+- jest
+tags:
+- graphql
+- thermostat
+- stack migration
+---
+
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Accelerating the energy transition</h1>
+    <p class="c-page-intro__excerpt">Shell Tapup has a mission to accelerate the energy transition. One of the biggest obstacles for many alternative fuels, is the lack of infrastructure. By digitizing the delivery vehicles we can not only automate a lot of processes; making it possible to operate the delivery vehicle by one person; creating invoices and transaction reports; and many more processes.</p>
+</div>
+
+<%- include('./_components/featured', {
+    title: "Shell Tapup",
+    image: "shell-tapup.jpg"
+}) %>
+
+<div class="o-wrapper-content">
+    <h2>Our challenge</h2>
+    <p>Shell Tapup is a young venture which started with the most basic set of tools to provide the delivery personnel means to register the transactions. This worked to prove the existence right of the concept and served its purpose.</p>
+    <p>Now it’s time to transition to an software landscape that scales with the exponential growth that is necessary to keep the venture alive. With the learnings of the initial setup, a scalable setup can be build, while keeping current operations running.</p>
+
+    <h2>Our approach</h2>
+    <p>We decided to go for a continuous deployment approach. Every small improvement will be available as soon as we have done internal testing, which translates to possibly only an hour after start of development. This allows for the delivery personnel to continuously get improvements and and provide feedback for more improvements.</p>
+    <p>This also allowed us to transition from the old stack, without waiting for the entire new stack to be completed. We could integrate the old services with the new services and phase the old services out one at a time.</p>
+
+    <h2>Our product</h2>
+    <p>The new stack is created to not only assists the delivery personnel to deliver the fuel, it also allows the operation and business personnel to get insights to improve via the dashboard. </p>
+
+    <h2>Our techniques</h2>
+    <p>To build the new infra as fast as possible, we decided to build the frontend with React and Redux connected to the backend via GraphQL layer. The microservices feeding the GraphQL layer is build with express and postgres.</p>
+
+    <h2>The result</h2>
+    <p>We are now able to serve the clients without the use of the old stack. Ready to tackle the needs of new customers to further more help the venture grow.</p>
+</div>

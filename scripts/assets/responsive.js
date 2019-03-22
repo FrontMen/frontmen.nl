@@ -8,7 +8,8 @@ const configs = [
   {width: '480px', rename: {suffix: '@xs'}},
   {width: '720px', rename: {suffix: '@sm'}},
   {width: '1024px', rename: {suffix: '@md'}},
-  {width: '1200px', rename: {suffix: '@lg'}}
+  {width: '1200px', rename: {suffix: '@lg'}},
+  {width: '1600px', rename: {suffix: '@xl'}},
 ];
 
 const suffixes = configs.map(config => config.rename.suffix);

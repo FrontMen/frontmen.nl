@@ -32,21 +32,4 @@
       }
     }
   }
-
-  // Second level
-  &__list &__list &__link {
-    @include font-size($font-size-h4);
-
-    &:before {
-      content: '- ';
-    }
-  }
-  &__list &__list {
-    list-style: disc;
-  }
-
-  &__logo {
-    max-width: 60%;
-    height: auto;
-  }
 }
