@@ -8,12 +8,14 @@
                 <a href="mailto:info@frontmen.nl">info@frontmen.nl</a>
             </address>
             <img class="c-more-info-section__avatar" src="<%= site.baseURL %>/img/frontdesk-avatar.png" alt="Contact Remco for" />
-            <div class="c-more-info-section__tags">
-                <strong class="c-more-info-section__title">Tags</strong>
-                <% for(var i=0; i < page.tags.length; i++) { %>
-                    <div class="c-more-info-section__tag"><%= page.tags[i] %></div>
-                <% } %>
-            </div>
+            <%if (page.tags) { %>
+                <div class="c-more-info-section__tags">
+                    <strong class="c-more-info-section__title">Tags</strong>
+                    <% for(var i=0; i < page.tags.length; i++) { %>
+                        <div class="c-more-info-section__tag"><%= page.tags[i] %></div>
+                    <% } %>
+                </div>
+            <% } %>
         </div>
     </div>
 </aside>

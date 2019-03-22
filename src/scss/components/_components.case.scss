@@ -1,0 +1,56 @@
+.c-case__grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-case {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  margin-bottom: $global-spacing-unit;
+  transition: box-shadow 0.3s ease-in-out;
+
+  width: 100%;
+  height: auto;
+
+  @include mq($from: tiny)    { width: 48%; height: 125px; } // 480px
+  @include mq($from: small)   { width: 48%; height: 150px; } // 720px
+  @include mq($from: medium)  { width: 32%; height: 135px; } // 1024px
+  @include mq($from: large)   { width: 32%; height: 150px; } // 1200px
+
+  a {
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__image {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: $global-spacing-unit-small;
+    margin: 0;
+
+    @include font-family(accent);
+    @include font-size($font-size-h5);
+    @include truncate();
+    text-align: center;
+
+    background: rgba(31,30,50, 0.7);
+    color: $color-grey-light;
+  }
+}
