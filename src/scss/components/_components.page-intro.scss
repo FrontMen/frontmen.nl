@@ -9,6 +9,11 @@
     @include mq($from: small) { @include font-size($font-size-h3); }
     @include mq($from: medium) { @include font-size($font-size-h2); }
     @include mq($from: large) { @include font-size($font-size-h1); }
+
+    &-sub {
+      @include font-weight(normal);
+      color: $color-brand-primary;
+    }
   }
 
   &__excerpt {
