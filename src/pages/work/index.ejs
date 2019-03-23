@@ -1,0 +1,49 @@
+---
+title: Work
+keywords:
+- work
+- projects
+- air france klm
+- jumbo
+- kramp
+- quby
+- rabobank
+- shell
+- tele2
+---
+
+<div class="o-wrapper-content c-page-intro">
+    <h1 class="c-page-intro__title">
+        We build awesome things<br />
+        <span class="c-page-intro__title-sub">here is some of the stuff we did</span>
+    </h1>
+</div>
+
+<%
+var projects = [
+    { url: 'air-france-klm', title: 'Air France KLM' },
+    { url: 'jumbo', title: 'Jumbo' },
+    { url: 'kramp', title: 'Kramp' },
+    { url: 'quby', title: 'Quby' },
+    { url: 'rabobank', title: 'Rabobank' },
+    { url: 'shell-tapup', title: 'Shell Tapup' },
+    { url: 'tele2', title: 'Tele2' }
+];
+%>
+<div class="o-wrapper-content u-mb-huge">
+    <div class="c-case__grid">
+    <% projects.forEach(function(project){ %>
+        <% var url = `${site.baseURL}/work/${project.url}`%>
+        <article class="c-case">
+            <a href="<%= url %>">
+                <img class="c-case__image" src="<%= url %>/<%= project.url %>@xs.jpg" alt="<%= project.title %>">
+            </a>
+            <h2 class="c-case__title">
+                <a href="<%= url %>"><%= project.title %></a>
+            </h2>
+        </article>
+    <% }); %>
+    </div>
+</div>
+
+<%- include('_partials/more-info') %>

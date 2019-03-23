@@ -1,0 +1,45 @@
+---
+title: Kramp
+layout: work
+technologies:
+- react
+- redux
+- jest
+tags:
+- kramp
+- graphql
+- seo
+- multilingual
+- server side
+---
+
+<div class="o-wrapper c-page-intro">
+    <h1 class="c-page-intro__title">Rewrite Kramp’s digital shop environment from the ground up</h1>
+    <p class="c-page-intro__excerpt">Kramp relies heavily on its web shop. Since it over a decade old and built with a technology stack that doesn’t meet their ever-growing need for expansion and to keep up with the latest possibilities in the digital world, they consulted Frontmen to provide a state-of-the-art solution that suited their needs and vision.</p>
+</div>
+
+<%- include('./_components/featured', {
+    title: "",
+    image: "kramp.jpg"
+}) %>
+
+<div class="o-wrapper-content">
+    <h2>Our challenge</h2>
+    <p>With the current shop being a big part of Kramp, it is required to be kept running 24/7. To provide a smooth transition we developed the new solution alongside the ‘old’ one whilst exposing certain parts of functionality piece by piece via routing.</p>
+    <p>Another big challenge was being SEO ready, we therefore decided to go with a server side rendered application. With not only the frontend being updated but the backend landscape moving from a monolith to a microservices approach we decided to use GraphQL to provide the aggregated data coming from the various services.</p>
+
+    <h2>Our approach</h2>
+    <p>At first we took the time to analyze the current functionality. Since the team was expanding rapidly at the start we needed to create a clear vision that provided the existing team and new team members with a shared focus. We introduced an overall Frontend Architect and 2 additional development teams.</p>
+    <p>With a clear vision and focus we started working on a rock-solid architecture, using our shared expertise we’ve come up with a solution that allowed for multiple (remote) teams to simultaneously work on this project.</p>
+    <p>Whilst evolving the architecture, we started implementing the required features, which involved component work, data modeling (within GraphQL) but also implementing the best UI/UX experience possible according to the as-is design.</p>
+
+    <h2>Our product</h2>
+    <p>We delivered a new version of the web shop which was fully server side rendered, SEO optimized and multilingual. Due to its solid foundation it can be easily expanded in the future when new functionality is desired. With multiple quality assurance steps in place and an automated DTAP environment on which the team can rely with confidence while developing these new functionalities.</p>
+
+    <h2>Our techniques</h2>
+    <p>To meet the requirements of Kramp we used React, to manage the complex state throughout the app we rely on redux and redux-observable for the controllable side effects.</p>
+    <p>Tests are performed using Enzyme/Jest on the unit level and Cucumber/WebdriverIO for the integration tests. To keep the performance-budgets in check we use Locust for performing the actual performance-test and Grafana to provide us with insights through its dashboards.</p>
+
+    <h2>The result</h2>
+    <p>With the new web shop released in more than 12 countries and developed in such a way that it’s easily expandable, we delivered a future proof solution which is trusted upon by over 3000 unique daily users.</p>
+</div>

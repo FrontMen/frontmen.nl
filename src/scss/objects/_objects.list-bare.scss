@@ -15,12 +15,5 @@
   margin-left: 0;
   &__item {
     margin-left: 0;
-    &--secondary-bullet {
-      background-image: url(#{$baseURL}/img/menu-icon.png);
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 16px;
-      padding-left: $global-spacing-unit;
-    }
   }
 }
