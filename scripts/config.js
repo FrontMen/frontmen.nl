@@ -6,7 +6,7 @@ const defaultConfig = {
   outputPath: './dist',
   port: 8000,
   site: {},
-  copyFiles: ['CNAME', 'googlee7ef5c56ec521bd0.html', 'favicon.ico']
+  copyFiles: ['_redirects', 'googlee7ef5c56ec521bd0.html', 'favicon.ico']
 };
 
 const siteConfig = yaml.safeLoad(fse.readFileSync('./config.yml', 'utf-8'));
