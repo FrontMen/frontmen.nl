@@ -4,15 +4,31 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <title><%= page.title ? `${page.title} | ${site.title}` : site.title %></title>
-<meta name="description" content="<%= page.description || site.description %>">
-<meta name="keywords" content="<%= (page.keywords || site.keywords).join(",") %>">
+
+<%
+    var description = page.description || site.description;
+
+    var keywords = [...new Set([
+      ...site.keywords || [] ,
+      ...page.keywords || [] ,
+
+        // For Work pages add the technologies/tags
+      ...page.technologies || [],
+      ...page.tags || []
+    ])];
+
+    var image = page.image ? `${site.baseURL}${page.url}/${page.image}` : `${site.baseURL}${site.image}`;
+%>
+
+<meta name="description" content="<%= description %>">
+<meta name="keywords" content="<%= keywords.join(",") %>">
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="<%= page.title || site.title %>" />
-<meta property="og:description" content="<%= page.description || site.description %>" />
+<meta property="og:description" content="<%= description %>" />
 <meta property="og:url" content="<%= site.baseURL %><%= page.url %>" />
 <meta property="og:site_name" content="<%= site.title %>" />
-<meta property="og:image" content="<%= page.image ? `${site.baseURL}${page.url}/${page.image}` : `${site.baseURL}/${site.image}` %>" />
+<meta property="og:image" content="<%= image %>" />
 
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
