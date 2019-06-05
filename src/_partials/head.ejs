@@ -27,6 +27,12 @@
 <meta name="theme-color" content="#1f1e32" />
 
 <link rel="canonical" href="<%= site.baseURL %><%= page.url %>" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134700059-1"></script>
 <script>
@@ -37,6 +43,27 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-134700059-1', { anonymize_ip: true });
+</script>
+
+<script>
+  window.addEventListener('load', function() {
+    window.cookieconsent.initialise({
+      palette: {
+        popup: {
+          background: '#1f1e32',
+          text: '#ffffff'
+        },
+        button: {
+          background: '#01cccb',
+          text: '#ffffff'
+        }
+      },
+      theme: 'edgeless',
+      content: {
+        href: 'https://www.frontmen.nl/privacy'
+      }
+    });
+  });
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet" />
