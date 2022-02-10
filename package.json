@@ -43,7 +43,7 @@
     "live-server": "^1.2.0",
     "lodash.debounce": "^4.0.8",
     "marked": "^0.4.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.14.0",
     "rename": "^1.0.4",
     "sass-mq": "^5.0.0",
