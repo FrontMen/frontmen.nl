@@ -47,7 +47,7 @@
     "prettier": "^1.14.0",
     "rename": "^1.0.4",
     "sass-mq": "^5.0.0",
-    "sharp": "^0.21.3",
+    "sharp": "^0.30.5",
     "sitemap-static": "^0.4.4",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0"
